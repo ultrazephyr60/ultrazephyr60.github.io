@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>童颜长辈免费漫画-全年龄向家庭阅读选集</title>
+<meta name="description" content="童颜长辈免费漫画是面向全家共读的免费漫画选集，收录祖辈与孙辈日常、手绘分镜、家庭小剧场与无广告试读章节，按人物设定、分镜节奏和适龄提示整理，方便长辈与孩子一起翻看并讨论。">
+<meta name="keywords" content="童颜长辈免费漫画">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff8a4c'/%3E%3Ccircle cx='24' cy='26' r='7' fill='%23fff4e6'/%3E%3Ccircle cx='42' cy='26' r='7' fill='%23fff4e6'/%3E%3Cpath d='M20 42c4 6 20 6 24 0' stroke='%23fff4e6' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --c-primary:#e8622a;
+  --c-primary-dark:#b8431a;
+  --c-primary-soft:#ffe9dd;
+  --c-accent:#2f6f8f;
+  --c-accent-soft:#e3f0f6;
+  --c-ink:#2b2622;
+  --c-ink-2:#5b524b;
+  --c-ink-3:#8a7f76;
+  --c-bg:#fdf9f4;
+  --c-surface:#ffffff;
+  --c-line:#ecdfd2;
+  --c-line-strong:#d9c6b4;
+  --c-good:#3c7a4a;
+  --c-warn:#a8621a;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --fs-h1:clamp(1.7rem,3.4vw,2.6rem);
+  --fs-h2:clamp(1.25rem,2vw,1.55rem);
+  --fs-h3:1.05rem;
+  --fs-body:1rem;
+  --fs-sm:.875rem;
+  --fs-xs:.78rem;
+  --sp-1:.35rem;--sp-2:.7rem;--sp-3:1rem;--sp-4:1.5rem;--sp-5:2.2rem;--sp-6:3rem;
+  --r-s:8px;--r-m:14px;--r-l:22px;--r-pill:999px;
+  --sh-1:0 2px 8px rgba(80,50,25,.06);
+  --sh-2:0 8px 26px rgba(80,50,25,.10);
+  --w-max:1180px;
+  --announce-h:38px;
+  --header-h:64px;
+  --sticky-offset:calc(var(--announce-h) + var(--header-h) + 12px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--c-bg);color:var(--c-ink);
+  font-family:var(--font-sans);font-size:var(--fs-body);line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--c-accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.3;margin:0;font-weight:700}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.3em}
+li{margin-bottom:.4rem}
+:target{scroll-margin-top:var(--sticky-offset)}
+.wrap{max-width:var(--w-max);margin:0 auto;padding:0 var(--sp-4)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--c-ink);color:#fff;padding:.6rem 1rem;z-index:200;border-radius:0 0 var(--r-s) 0}
+.skip:focus{left:0}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--announce-h);
+  background:linear-gradient(90deg,#b8431a,#e8622a 55%,#f08a4a);
+  color:#fff8f1;font-size:var(--fs-xs);display:flex;align-items:center;
+}
+.announce .wrap{display:flex;align-items:center;gap:var(--sp-2);width:100%;overflow:hidden;white-space:nowrap}
+.announce b{background:rgba(255,255,255,.2);padding:1px 8px;border-radius:var(--r-pill);font-weight:600;flex:none}
+.announce span{overflow:hidden;text-overflow:ellipsis}
+.announce a{color:#fff;text-decoration:underline;flex:none}
+
+/* 页头 */
+.header{
+  position:sticky;top:var(--announce-h);z-index:55;height:var(--header-h);
+  background:rgba(253,249,244,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--c-line);box-shadow:var(--sh-1);
+}
+.header .wrap{display:flex;align-items:center;gap:var(--sp-3);height:100%}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:800;color:var(--c-ink);font-size:1.02rem;letter-spacing:.01em;flex:none}
+.brand:hover{text-decoration:none}
+.brand svg{width:34px;height:34px;flex:none}
+.nav-main{display:flex;align-items:center;gap:.2rem;flex:1;min-width:0;overflow:hidden}
+.nav-main a{
+  color:var(--c-ink-2);font-size:var(--fs-sm);padding:.35rem .6rem;border-radius:var(--r-pill);
+  white-space:nowrap;
+}
+.nav-main a:hover{background:var(--c-primary-soft);color:var(--c-primary-dark);text-decoration:none}
+.nav-main a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #2f6f8f;outline-offset:2px}
+.header-tools{display:flex;align-items:center;gap:.5rem;flex:none}
+.search-box{display:flex;align-items:center;background:var(--c-surface);border:1px solid var(--c-line-strong);border-radius:var(--r-pill);padding:2px 4px 2px 10px}
+.search-box input{border:0;background:transparent;font:inherit;font-size:var(--fs-sm);width:120px;color:var(--c-ink);outline:none;padding:.3rem 0}
+.search-box button{border:0;background:var(--c-primary);color:#fff;font:inherit;font-size:var(--fs-xs);padding:.35rem .7rem;border-radius:var(--r-pill);cursor:pointer}
+.search-box button:hover{background:var(--c-primary-dark)}
+.btn{
+  display:inline-flex;align-items:center;gap:.4rem;border:1px solid transparent;cursor:pointer;
+  font:inherit;font-size:var(--fs-sm);font-weight:600;padding:.45rem .95rem;border-radius:var(--r-pill);
+  transition:transform .15s ease,background .15s ease,color .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--c-primary);color:#fff}
+.btn-primary:hover{background:var(--c-primary-dark)}
+.btn-ghost{background:transparent;border-color:var(--c-line-strong);color:var(--c-ink)}
+.btn-ghost:hover{background:var(--c-primary-soft);border-color:var(--c-primary)}
+.menu-btn{display:none;background:var(--c-surface);border:1px solid var(--c-line-strong);border-radius:var(--r-s);
+  padding:.4rem .55rem;cursor:pointer;color:var(--c-ink)}
+.menu-btn svg{width:20px;height:20px;display:block}
+.search-feedback{font-size:var(--fs-xs);color:var(--c-warn);width:100%;margin-top:.35rem;display:none}
+.search-feedback.show{display:block}
+.mobile-nav{display:none;background:var(--c-surface);border-bottom:1px solid var(--c-line);padding:var(--sp-2) var(--sp-4)}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:.5rem .3rem;color:var(--c-ink-2);border-bottom:1px dashed var(--c-line)}
+.mobile-nav a:last-child{border-bottom:0}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;background:
+    radial-gradient(1000px 420px at 82% -10%,#ffd9c2 0%,transparent 62%),
+    radial-gradient(640px 340px at 8% 110%,#d9ecf4 0%,transparent 66%),
+    var(--c-bg);
+  border-bottom:1px solid var(--c-line);
+}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:var(--sp-5);align-items:center;padding-top:var(--sp-6);padding-bottom:var(--sp-6)}
+.hero-tag{display:inline-flex;align-items:center;gap:.45rem;background:var(--c-surface);border:1px solid var(--c-line-strong);
+  color:var(--c-primary-dark);font-size:var(--fs-xs);font-weight:600;padding:.28rem .8rem;border-radius:var(--r-pill);margin-bottom:var(--sp-3)}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--c-primary);display:inline-block}
+.hero h1{font-size:var(--fs-h1);letter-spacing:-.01em;margin-bottom:var(--sp-3);color:var(--c-ink)}
+.hero h1 em{font-style:normal;color:var(--c-primary-dark);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.32em;background:#ffd6bd;z-index:-1;border-radius:3px}
+.hero-lead{color:var(--c-ink-2);max-width:34em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin:var(--sp-3) 0 var(--sp-4)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:var(--sp-4);border-top:1px dashed var(--c-line-strong);padding-top:var(--sp-3)}
+.hero-stats div{min-width:88px}
+.hero-stats strong{display:block;font-size:1.35rem;color:var(--c-primary-dark);line-height:1.2}
+.hero-stats span{font-size:var(--fs-xs);color:var(--c-ink-3)}
+.hero-art{position:relative;min-height:340px}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 14px 26px rgba(120,60,25,.14))}
+.hero-art .art-note{
+  position:absolute;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);
+  box-shadow:var(--sh-2);padding:.5rem .75rem;font-size:var(--fs-xs);color:var(--c-ink-2);max-width:190px;
+}
+.art-note.a{top:6%;left:-4%}
+.art-note.b{bottom:9%;right:-2%}
+.art-note b{color:var(--c-primary-dark);display:block;font-size:var(--fs-sm)}
+
+/* 通用区块 */
+.section{padding:var(--sp-6) 0;border-bottom:1px solid var(--c-line)}
+.section:last-of-type{border-bottom:0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--sp-3);margin-bottom:var(--sp-4);flex-wrap:wrap}
+.sec-head h2{font-size:var(--fs-h2);display:flex;align-items:center;gap:.55rem}
+.sec-head h2::before{content:"";width:6px;height:1.15em;border-radius:3px;background:var(--c-primary);display:inline-block}
+.sec-desc{color:var(--c-ink-3);font-size:var(--fs-sm);max-width:46em;margin:.2rem 0 0}
+.sec-link{font-size:var(--fs-sm);font-weight:600;flex:none}
+
+/* 布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-5);align-items:start}
+.sidebar{position:sticky;top:var(--sticky-offset);display:flex;flex-direction:column;gap:var(--sp-3)}
+.side-card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-1)}
+.side-card h3{font-size:var(--fs-sm);letter-spacing:.03em;color:var(--c-ink-2);margin-bottom:var(--sp-2);padding-bottom:.5rem;border-bottom:1px dashed var(--c-line)}
+.side-nav a{display:block;padding:.35rem .5rem;border-left:3px solid transparent;border-radius:0 var(--r-s) var(--r-s) 0;
+  color:var(--c-ink-2);font-size:var(--fs-sm);transition:background .15s,border-color .15s,color .15s}
+.side-nav a:hover{background:var(--c-primary-soft);text-decoration:none}
+.side-nav a.active{border-left-color:var(--c-primary);background:var(--c-primary-soft);color:var(--c-primary-dark);font-weight:600}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{font-size:var(--fs-sm);color:var(--c-ink-2);padding:.4rem 0;border-bottom:1px dashed var(--c-line);margin:0}
+.side-list li:last-child{border-bottom:0}
+.side-list time{display:block;font-size:var(--fs-xs);color:var(--c-ink-3)}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.ov-card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);padding:var(--sp-3);
+  box-shadow:var(--sh-1);transition:transform .15s ease,box-shadow .15s ease}
+.ov-card:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.ov-card .k{font-size:var(--fs-xs);color:var(--c-primary-dark);font-weight:700;letter-spacing:.04em}
+.ov-card h3{font-size:var(--fs-h3);margin:.3rem 0 .4rem}
+.ov-card p{font-size:var(--fs-sm);color:var(--c-ink-2);margin:0}
+.meta-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:var(--sp-2)}
+.chip{font-size:var(--fs-xs);background:var(--c-accent-soft);color:#23556c;padding:1px 8px;border-radius:var(--r-pill);white-space:nowrap}
+.chip.warm{background:var(--c-primary-soft);color:var(--c-primary-dark)}
+.chip.good{background:#e4f1e7;color:var(--c-good)}
+
+/* 精选推荐 */
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.feat{display:grid;grid-template-columns:120px minmax(0,1fr);gap:var(--sp-3);background:var(--c-surface);
+  border:1px solid var(--c-line);border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);transition:transform .15s ease,box-shadow .15s ease}
+.feat:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.feat img{width:120px;height:100%;min-height:132px;object-fit:cover}
+.feat-body{padding:var(--sp-2) var(--sp-3) var(--sp-2) 0;display:flex;flex-direction:column;gap:.25rem}
+.feat-body h3{font-size:.98rem}
+.feat-body h3 a{color:var(--c-ink)}
+.feat-body h3 a:hover{color:var(--c-primary-dark);text-decoration:none}
+.feat-body p{font-size:var(--fs-xs);color:var(--c-ink-2);margin:0}
+.feat-body .meta-row{margin-top:auto;padding-top:.4rem}
+
+/* 最新更新 - 紧凑列表 */
+.update-list{list-style:none;margin:0;padding:0;border:1px solid var(--c-line);border-radius:var(--r-m);overflow:hidden;background:var(--c-surface)}
+.update-list li{display:grid;grid-template-columns:64px 1fr auto;gap:var(--sp-2);align-items:baseline;
+  padding:.7rem var(--sp-3);border-bottom:1px solid var(--c-line);margin:0;font-size:var(--fs-sm)}
+.update-list li:last-child{border-bottom:0}
+.update-list time{color:var(--c-ink-3);font-size:var(--fs-xs);font-variant-numeric:tabular-nums}
+.update-list .t{color:var(--c-ink)}
+.update-list .t a{color:var(--c-ink);font-weight:600}
+.update-list .tag{font-size:var(--fs-xs);color:var(--c-accent)}
+
+/* 分类入口 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:.5rem}
+.cat-index a{display:inline-flex;align-items:center;gap:.4rem;background:var(--c-surface);border:1px solid var(--c-line-strong);
+  border-radius:var(--r-pill);padding:.42rem .85rem;font-size:var(--fs-sm);color:var(--c-ink-2);transition:background .15s,border-color .15s,color .15s}
+.cat-index a:hover{background:var(--c-primary-soft);border-color:var(--c-primary);color:var(--c-primary-dark);text-decoration:none}
+.cat-index a b{font-size:var(--fs-xs);color:var(--c-ink-3);font-weight:500}
+.cat-note{font-size:var(--fs-xs);color:var(--c-ink-3);margin-top:var(--sp-2)}
+
+/* 深度解析 */
+.analysis{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-l);padding:var(--sp-4) var(--sp-4) var(--sp-3);box-shadow:var(--sh-1)}
+.analysis .lead{font-size:1.03rem;color:var(--c-ink-2)}
+.analysis h3{font-size:var(--fs-h3);margin:var(--sp-4) 0 var(--sp-2);padding-left:.6rem;border-left:4px solid var(--c-primary)}
+.analysis h3:first-of-type{margin-top:var(--sp-2)}
+.analysis p{font-size:.96rem;color:var(--c-ink-2)}
+.analysis strong{color:var(--c-ink)}
+.claim-box{background:var(--c-primary-soft);border:1px solid #f2c9b0;border-radius:var(--r-m);padding:var(--sp-3);margin:var(--sp-3) 0}
+.claim-box h4{font-size:var(--fs-sm);color:var(--c-primary-dark);margin-bottom:.4rem}
+.claim-box p{font-size:var(--fs-sm);margin:0;color:#6a3a21}
+.compare-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:var(--sp-2) 0 var(--sp-3)}
+.compare-table caption{text-align:left;font-size:var(--fs-xs);color:var(--c-ink-3);padding-bottom:.4rem}
+.compare-table th,.compare-table td{border:1px solid var(--c-line);padding:.5rem .65rem;text-align:left;vertical-align:top}
+.compare-table th{background:var(--c-accent-soft);color:#23556c;font-weight:600;white-space:nowrap}
+.compare-table td{color:var(--c-ink-2)}
+.source-note{font-size:var(--fs-xs);color:var(--c-ink-3);border-top:1px dashed var(--c-line-strong);padding-top:var(--sp-2);margin-top:var(--sp-3)}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-2)}
+.steps li{counter-increment:step;position:relative;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);
+  padding:var(--sp-3) var(--sp-3) var(--sp-3) 3.6rem;margin:0}
+.steps li::before{content:counter(step);position:absolute;left:var(--sp-3);top:var(--sp-3);width:1.9rem;height:1.9rem;
+  border-radius:50%;background:var(--c-primary);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:var(--fs-sm)}
+.steps h3{font-size:.98rem;margin-bottom:.25rem}
+.steps p{font-size:var(--fs-sm);color:var(--c-ink-2);margin:0}
+
+/* 对照面板 */
+.panel-compare{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3)}
+.panel{border:1px solid var(--c-line);border-radius:var(--r-m);background:var(--c-surface);padding:var(--sp-3)}
+.panel.yes{border-top:4px solid var(--c-good)}
+.panel.no{border-top:4px solid var(--c-warn)}
+.panel h3{font-size:var(--fs-h3);margin-bottom:var(--sp-2)}
+.panel ul{margin:0;padding-left:1.1em;font-size:var(--fs-sm);color:var(--c-ink-2)}
+
+/* FAQ */
+.faq-list{display:grid;gap:.5rem}
+details{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);padding:0;overflow:hidden}
+details[open]{border-color:var(--c-primary)}
+summary{cursor:pointer;padding:.8rem var(--sp-3);font-weight:600;font-size:.96rem;color:var(--c-ink);
+  display:flex;justify-content:space-between;gap:var(--sp-2);align-items:center;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.1rem;color:var(--c-primary);flex:none;transition:transform .15s ease}
+details[open] summary::after{content:"–"}
+details .faq-body{padding:0 var(--sp-3) var(--sp-3);font-size:var(--fs-sm);color:var(--c-ink-2)}
+details .faq-body p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;gap:var(--sp-2)}
+.comment{display:grid;grid-template-columns:44px 1fr;gap:var(--sp-2);background:var(--c-surface);border:1px solid var(--c-line);
+  border-radius:var(--r-m);padding:var(--sp-3)}
+.avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#fff;font-size:var(--fs-sm);flex:none}
+.avatar.a{background:#e8622a}.avatar.b{background:#2f6f8f}.avatar.c{background:#7a5aa8}
+.avatar.d{background:#3c7a4a}.avatar.e{background:#a8621a}
+.comment .c-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:.2rem}
+.comment .c-head b{font-size:var(--fs-sm)}
+.comment .c-head time{font-size:var(--fs-xs);color:var(--c-ink-3)}
+.comment p{font-size:var(--fs-sm);color:var(--c-ink-2);margin:0}
+.comment .quote{display:block;border-left:3px solid var(--c-line-strong);padding-left:.6rem;margin:.4rem 0;
+  font-size:var(--fs-xs);color:var(--c-ink-3);font-style:normal}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.news-item{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);padding:var(--sp-3);
+  border-left:4px solid var(--c-accent)}
+.news-item time{font-size:var(--fs-xs);color:var(--c-ink-3)}
+.news-item h3{font-size:.98rem;margin:.2rem 0 .35rem}
+.news-item h3 a{color:var(--c-ink)}
+.news-item h3 a:hover{color:var(--c-accent)}
+.news-item p{font-size:var(--fs-sm);color:var(--c-ink-2);margin:0}
+
+/* 推荐 标签 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:.45rem}
+.tag-cloud a{font-size:var(--fs-sm);background:var(--c-surface);border:1px solid var(--c-line-strong);color:var(--c-ink-2);
+  padding:.3rem .75rem;border-radius:var(--r-pill);transition:background .15s,border-color .15s,color .15s}
+.tag-cloud a:hover{background:var(--c-accent-soft);border-color:var(--c-accent);color:#23556c;text-decoration:none}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 1.4rem;position:relative}
+.timeline::before{content:"";position:absolute;left:.42rem;top:.4rem;bottom:.4rem;width:2px;background:var(--c-line-strong)}
+.timeline li{position:relative;margin:0 0 var(--sp-3);font-size:var(--fs-sm);color:var(--c-ink-2)}
+.timeline li::before{content:"";position:absolute;left:-1.22rem;top:.45rem;width:10px;height:10px;border-radius:50%;
+  background:var(--c-surface);border:2px solid var(--c-primary)}
+.timeline time{display:block;font-size:var(--fs-xs);color:var(--c-primary-dark);font-weight:600}
+.timeline b{color:var(--c-ink)}
+
+/* 引语卡 */
+.quote-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}
+.quote-card blockquote{margin:0;background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-m);
+  padding:var(--sp-3) var(--sp-3) var(--sp-3) 2.4rem;position:relative;font-size:var(--fs-sm);color:var(--c-ink-2)}
+.quote-card blockquote::before{content:"“";position:absolute;left:.6rem;top:.1rem;font-size:2.4rem;color:var(--c-primary);font-family:Georgia,serif}
+.quote-card cite{display:block;margin-top:.5rem;font-size:var(--fs-xs);color:var(--c-ink-3);font-style:normal}
+
+/* 页尾 */
+.footer{background:#2b2622;color:#d8cec5;padding:var(--sp-5) 0 var(--sp-3);font-size:var(--fs-sm)}
+.footer .wrap{display:grid;gap:var(--sp-4)}
+.footer-top{display:grid;grid-template-columns:1.4fr 2fr;gap:var(--sp-4)}
+.footer .brand{color:#fff;font-size:1.05rem}
+.footer .tagline{color:#b8aca2;margin:var(--sp-2) 0 0;max-width:30em}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.footer-cols h3{font-size:var(--fs-sm);color:#fff;margin-bottom:var(--sp-2);font-weight:600}
+.footer-cols a{display:block;color:#b8aca2;font-size:var(--fs-xs);padding:.18rem 0}
+.footer-cols a:hover{color:#ffbe9c;text-decoration:none}
+.footer-bottom{border-top:1px solid #443d37;padding-top:var(--sp-3);font-size:var(--fs-xs);color:#9c9189;display:flex;flex-wrap:wrap;gap:.5rem var(--sp-3);justify-content:space-between}
+.footer-note{font-size:var(--fs-xs);color:#8f847c}
+
+/* 回到顶部 */
+.to-top{position:fixed;right:18px;bottom:18px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--c-primary);color:#fff;border:0;cursor:pointer;box-shadow:var(--sh-2);display:none;
+  align-items:center;justify-content:center;font-size:1.2rem;line-height:1}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--c-primary-dark);transform:translateY(-2px)}
+.to-top:focus-visible{outline:3px solid var(--c-accent);outline-offset:2px}
+
+/* 响应式 */
+@media(max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:static;order:2}
+  .hero .wrap{grid-template-columns:1fr;gap:var(--sp-4);padding-top:var(--sp-5);padding-bottom:var(--sp-5)}
+  .hero-art{min-height:0;max-width:520px}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+  .quote-card{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .nav-main{display:none}
+  .menu-btn{display:inline-flex}
+  .search-box{display:none}
+  .header .wrap{gap:var(--sp-2)}
+  .overview-grid,.news-grid,.panel-compare{grid-template-columns:1fr}
+  .footer-cols{grid-template-columns:1fr 1fr}
+  .hero-stats{gap:var(--sp-3)}
+  .hero-stats div{min-width:72px}
+  .update-list li{grid-template-columns:1fr;gap:.15rem}
+  .update-list .tag{font-size:var(--fs-xs)}
+  .announce{font-size:.72rem}
+  .to-top{right:12px;bottom:12px}
+  .analysis{padding:var(--sp-3)}
+}
+@media(max-width:400px){
+  .feat{grid-template-columns:1fr}
+  .feat img{width:100%;height:150px}
+  .feat-body{padding:var(--sp-2) var(--sp-3)}
+  .wrap{padding:0 var(--sp-3)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.ov-card:hover,.feat:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文内容</a>
+
+<div class="announce">
+  <div class="wrap">
+    <b>更新</b>
+    <span>《外婆的针线盒》第 14 话于 2026-11-06 上线；《爷爷的红白机》修订版补上 1998 年街机厅场景，共 8 页分镜。</span>
+    <a href="/#latest">查看全部</a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="童颜长辈免费漫画 首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#e8622a"/>
+        <circle cx="24" cy="26" r="7" fill="#fff4e6"/>
+        <circle cx="42" cy="26" r="7" fill="#fff4e6"/>
+        <path d="M20 42c4 6 20 6 24 0" stroke="#fff4e6" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M15 20c2-5 7-7 10-6" stroke="#ffd9c2" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M49 20c-2-5-7-7-10-6" stroke="#ffd9c2" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>童颜长辈免费漫画</span>
+    </a>
+    <nav class="nav-main" aria-label="主题导航">
+      <a href="/#overview">家庭日常</a>
+      <a href="/#picks">祖孙手绘</a>
+      <a href="/#latest">今日上新</a>
+      <a href="/#categories">分类索引</a>
+      <a href="/#analysis">分镜解析</a>
+      <a href="/#guide">共读指南</a>
+      <a href="/#faq">常见问题</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <label for="site-search" class="skip">搜索栏目</label>
+        <input id="site-search" type="search" placeholder="搜栏目，如 手绘" autocomplete="off">
+        <button type="button" id="search-btn">搜索</button>
+      </div>
+      <a class="btn btn-primary" href="/#picks">开始翻看</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="展开导航菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-feedback" id="search-feedback" role="status" aria-live="polite"></div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
+  <a href="/#overview">家庭日常</a>
+  <a href="/#picks">祖孙手绘</a>
+  <a href="/#latest">今日上新</a>
+  <a href="/#categories">分类索引</a>
+  <a href="/#analysis">分镜解析</a>
+  <a href="/#guide">共读指南</a>
+  <a href="/#faq">常见问题</a>
+  <a href="/#comments">读者留言</a>
+</nav>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="hero-tag"><i></i>全家共读 · 免费试读 · 每周三、周日更新</span>
+        <h1 id="hero-title">童颜长辈免费漫画</h1>
+        <p class="hero-lead">把外公外婆、爷爷奶奶和小孩放进同一格分镜里：一册围绕代际日常的免费漫画选集，收录家庭小剧场、手绘速写与无广告试读章节，按人物设定、分镜节奏、适龄提示整理，长辈和孩子可以一边翻一边聊。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#picks">翻看本周选集</a>
+          <a class="btn btn-ghost" href="/#guide">用三步挑一话</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>11</strong><span>主题频道</span></div>
+          <div><strong>126</strong><span>可读话数</span></div>
+          <div><strong>42</strong><span>分镜拆解笔记</span></div>
+          <div><strong>每周 2 次</strong><span>固定更新</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 460 340" role="img">
+          <defs>
+            <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffe9dd"/>
+              <stop offset="1" stop-color="#e3f0f6"/>
+            </linearGradient>
+            <linearGradient id="hairG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f7f2ec"/>
+              <stop offset="1" stop-color="#d9c9ba"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="444" height="324" rx="26" fill="url(#bgGrad)"/>
+          <rect x="36" y="40" width="180" height="230" rx="16" fill="#fff" stroke="#d9c6b4" stroke-width="2"/>
+          <rect x="240" y="40" width="180" height="230" rx="16" fill="#fff" stroke="#d9c6b4" stroke-width="2"/>
+          <path d="M52 62h148M52 76h100" stroke="#ecdfd2" stroke-width="6" stroke-linecap="round"/>
+          <path d="M256 62h148M256 76h86" stroke="#ecdfd2" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="126" cy="150" r="34" fill="#fff4e6" stroke="#e8622a" stroke-width="3"/>
+          <path d="M100 138c4-20 22-30 38-24 8 3 14 10 16 20-14-8-32-6-54 4z" fill="url(#hairG)"/>
+          <circle cx="114" cy="150" r="3.5" fill="#2b2622"/>
+          <circle cx="138" cy="150" r="3.5" fill="#2b2622"/>
+          <path d="M116 166c5 5 15 5 20 0" stroke="#2b2622" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M92 206c8-14 22-22 34-22s26 8 34 22" stroke="#e8622a" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <circle cx="330" cy="146" r="26" fill="#fff4e6" stroke="#2f6f8f" stroke-width="3"/>
+          <path d="M306 132c8-14 24-20 36-14 6 3 10 8 12 14-16-6-32-4-48 0z" fill="#3a3a3a"/>
+          <circle cx="321" cy="146" r="3" fill="#2b2622"/>
+          <circle cx="339" cy="146" r="3" fill="#2b2622"/>
+          <path d="M322 158c5 4 12 4 16 0" stroke="#2b2622" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M304 206c6-12 18-18 26-18s20 6 26 18" stroke="#2f6f8f" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <rect x="200" y="96" width="56" height="80" rx="8" fill="#fff" stroke="#d9c6b4" stroke-width="2"/>
+          <path d="M214 116h28M214 130h20M214 144h28M214 158h14" stroke="#ecdfd2" stroke-width="4" stroke-linecap="round"/>
+          <rect x="196" y="228" width="64" height="10" rx="5" fill="#e8622a" opacity=".55"/>
+          <rect x="196" y="244" width="42" height="8" rx="4" fill="#2f6f8f" opacity=".45"/>
+        </svg>
+        <div class="art-note a"><b>两格对照</b>外婆与孙女的同款表情，分镜里并排放。</div>
+        <div class="art-note b"><b>手绘速写</b>72 页原稿扫描，保留铅笔辅助线。</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+      <div class="main-col">
+
+        <section class="section" id="overview" aria-labelledby="ov-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="ov-title">领域概览：代际日常漫画在讲什么</h2>
+              <p class="sec-desc">以祖辈、孙辈的同框关系为叙事核心，常见四类题材。下面的条目均标注具体话数与首次上线时间，方便先判断类型再翻页。</p>
+            </div>
+          </div>
+          <div class="overview-grid">
+            <article class="ov-card">
+              <span class="k">类型 01</span>
+              <h3>祖孙同居日常</h3>
+              <p>《灶台边的暑假》共 18 话，2026-10-12 起连载。外婆教孙女择菜，每周一话，每话 6 到 8 格，单话阅读约 4 分钟。</p>
+              <div class="meta-row"><span class="chip">6–8 格/话</span><span class="chip warm">适龄 8+</span></div>
+            </article>
+            <article class="ov-card">
+              <span class="k">类型 02</span>
+              <h3>老物件回溯</h3>
+              <p>《缝纫机下的信》以 1979 年上海弄堂为背景，2026-10-20 上线前 6 话，分镜偏静态，画面文字较多。</p>
+              <div class="meta-row"><span class="chip">旁白制</span><span class="chip warm">适龄 12+</span></div>
+            </article>
+            <article class="ov-card">
+              <span class="k">类型 03</span>
+              <h3>方言家庭小剧场</h3>
+              <p>《阿婆讲古》用闽南语对白配普通话注释，2026-10-28 上线 9 话，每话附 4 到 6 处读音注释。</p>
+              <div class="meta-row"><span class="chip">双语注释</span><span class="chip good">亲子共读</span></div>
+            </article>
+            <article class="ov-card">
+              <span class="k">类型 04</span>
+              <h3>银发角色设定集</h3>
+              <p>《银发主角档案》收录 32 位 60 岁以上角色设定，2026-11-03 更新第 7 批，含身高、口头禅、常穿衣物三类字段。</p>
+              <div class="meta-row"><span class="chip">设定表</span><span class="chip">无剧透</span></div>
+            </article>
+            <article class="ov-card">
+              <span class="k">类型 05</span>
+              <h3>手绘分镜速写</h3>
+              <p>《铅笔线里的一家人》71 张原稿扫描，2026-11-05 上线第 4 批 18 张，保留辅助线与橡皮擦痕。</p>
+              <div class="meta-row"><span class="chip warm">过程稿</span><span class="chip">附注解</span></div>
+            </article>
+            <article class="ov-card">
+              <span class="k">类型 06</span>
+              <h3>节日短篇集</h3>
+              <p>重阳、冬至、春节三类短篇共 12 话，每话独立成篇。2026-10-29 补入《冬至的汤圆勺》8 页。</p>
+              <div class="meta-row"><span class="chip">单话完结</span><span class="chip good">可抽读</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="picks" aria-labelledby="pk-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="pk-title">精选内容推荐：本周值得先翻的 4 话</h2>
+              <p class="sec-desc">按分镜完成度、对白信息量、适龄范围三个维度挑出。每话都标注具体格数，不做笼统推荐。</p>
+            </div>
+            <a class="sec-link" href="/#categories">按分类找 →</a>
+          </div>
+          <div class="feature-grid">
+            <article class="feat">
+              <img src="https://picsum.photos/seed/zuo-tai/240/300" width="240" height="300" loading="lazy" alt="《灶台边的暑假》第 6 话封面，外婆与孙女在厨房择菜的两格分镜">
+              <div class="feat-body">
+                <h3><a href="/#picks">灶台边的暑假 · 第 6 话「择菜比赛」</a></h3>
+                <p>7 格分镜，外婆的择菜速度被孙女用秒表计时，第 4 格给出 47 秒与 2 分 10 秒的对比。</p>
+                <div class="meta-row"><span class="chip warm">7 格</span><span class="chip">4 分钟</span><span class="chip good">对话密集</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/hong-bai-ji/240/300" width="240" height="300" loading="lazy" alt="《爷爷的红白机》修订版封面，老人与孩子并排坐在地毯上打游戏">
+              <div class="feat-body">
+                <h3><a href="/#picks">爷爷的红白机 · 修订版第 3 话</a></h3>
+                <p>补画 1998 年街机厅场景 8 页，爷爷的按键习惯被拆成 3 个特写格，附手柄示意图。</p>
+                <div class="meta-row"><span class="chip warm">修订 8 页</span><span class="chip">全彩</span><span class="chip">适龄 10+</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/zhen-xian-he/240/300" width="240" height="300" loading="lazy" alt="《外婆的针线盒》第 14 话内页，线轴与顶针的俯拍构图">
+              <div class="feat-body">
+                <h3><a href="/#picks">外婆的针线盒 · 第 14 话「顶针」</a></h3>
+                <p>11 月 6 日上线，全部用俯拍视角，一页只放一个物件；第 9 格首次出现外婆年轻时的照片。</p>
+                <div class="meta-row"><span class="chip warm">俯拍构图</span><span class="chip">静物叙事</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/a-po-jiang-gu/240/300" width="240" height="300" loading="lazy" alt="《阿婆讲古》闽南语短篇内页，祖孙坐在门槛上，对白带读音注释">
+              <div class="feat-body">
+                <h3><a href="/#picks">阿婆讲古 · 第 9 话「落雨」</a></h3>
+                <p>闽南语对白配 6 处普通话注释，第 5 格用象声词「咑咑滴」标注雨声，读完约 3 分钟。</p>
+                <div class="meta-row"><span class="chip">注释 6 处</span><span class="chip warm">方言</span><span class="chip good">亲子</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="latest" aria-labelledby="lt-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="lt-title">最新更新：11 月 1 日至 11 月 8 日</h2>
+              <p class="sec-desc">只列已上线话数，日期与页数为实际发布记录。修订项单独标注版本号。</p>
+            </div>
+          </div>
+          <ul class="update-list">
+            <li>
+              <time datetime="2026-11-08">今天</time>
+              <span class="t"><a href="/#latest">《灶台边的暑假》第 18 话</a>　外婆的择菜口诀写成 4 句顺口溜</span>
+              <span class="tag">正篇</span>
+            </li>
+            <li>
+              <time datetime="2026-11-07">昨天</time>
+              <span class="t"><a href="/#latest">《冬至的汤圆勺》短篇</a>　8 页，全篇无对白，靠动作分镜推进</span>
+              <span class="tag">短篇</span>
+            </li>
+            <li>
+              <time datetime="2026-11-06">11-06</time>
+              <span class="t"><a href="/#latest">《外婆的针线盒》第 14 话</a>　俯拍视角，线轴与顶针各占一整格</span>
+              <span class="tag">正篇</span>
+            </li>
+            <li>
+              <time datetime="2026-11-05">11-05</time>
+              <span class="t"><a href="/#latest">《铅笔线里的一家人》第 4 批</a>　新增 18 张原稿，保留辅助线</span>
+              <span class="tag">过程稿</span>
+            </li>
+            <li>
+              <time datetime="2026-11-04">11-04</time>
+              <span class="t"><a href="/#latest">《爷爷的红白机》修订版</a>　v1.2，补 8 页街机厅场景，修正手柄按键描线</span>
+              <span class="tag">修订</span>
+            </li>
+            <li>
+              <time datetime="2026-11-03">11-03</time>
+              <span class="t"><a href="/#latest">《银发主角档案》第 7 批</a>　新增 5 位 60 岁以上角色设定表</span>
+              <span class="tag">设定</span>
+            </li>
+            <li>
+              <time datetime="2026-11-01">11-01</time>
+              <span class="t"><a href="/#latest">《重阳登高图》单页</a>　俯视全景一格，标注 6 个山路拐点</span>
+              <span class="tag">单页</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" id="categories" aria-labelledby="ct-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="ct-title">分类入口：按频道进</h2>
+              <p class="sec-desc">11 个频道按题材与形式划分，括号内为当前可读话数。频道之间允许交叉，例如「方言」频道也收《阿婆讲古》的手绘过程稿。</p>
+            </div>
+          </div>
+          <div class="cat-index">
+            <a href="/#overview">祖孙同居日常 <b>31 话</b></a>
+            <a href="/#overview">老物件回溯 <b>19 话</b></a>
+            <a href="/#picks">方言家庭小剧场 <b>14 话</b></a>
+            <a href="/#picks">银发主角设定 <b>32 位</b></a>
+            <a href="/#analysis">手绘分镜速写 <b>71 张</b></a>
+            <a href="/#guide">节日短篇集 <b>12 话</b></a>
+            <a href="/#latest">厨房里的代际对话 <b>9 话</b></a>
+            <a href="/#comments">老人与游戏机 <b>7 话</b></a>
+            <a href="/#news">无对白动作分镜 <b>6 话</b></a>
+            <a href="/#timeline">家庭合影构图研究 <b>5 篇</b></a>
+            <a href="/#faq">适龄阅读标注 <b>4 级</b></a>
+          </div>
+          <p class="cat-note">频道名后的数字为 11 月 8 日统计口径，修订版本不重复计数。</p>
+        </section>
+
+        <section class="section" id="analysis" aria-labelledby="an-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="an-title">深度解析：把外婆画成主角，分镜要付出什么代价</h2>
+            </div>
+          </div>
+          <article class="analysis">
+            <p class="lead">以老人为叙事核心，最大的问题不在设定，在视线高度。孩子矮、老人常坐，两种视点在一页里撞车，读者会分不清自己站在谁的位置。下面用三条可核对的时间线拆这个问题。</p>
+
+            <div class="claim-box">
+              <h4>可被引用、也可被反驳的判断</h4>
+              <p>《灶台边的暑假》前 6 话把老人视点放在页面下方 40% 区域内，7 格里有 5 格低于 1.1 米机位，这造成第 6 话「择菜比赛」的时间对比读起来偏慢，但换来外婆手部动作的细节密度。这个取舍对 8 岁以上读者的可读性提升，大于对节奏的损失。</p>
+            </div>
+
+            <h3>案例时间线一：从 10 月 12 日到 11 月 8 日的机位变化</h3>
+            <p>10 月 12 日首话 6 格，5 格用平视，1 格俯视。10 月 26 日第 9 话起，作者把灶台高度画在画面三分之一线，机位降到 1.05 米左右。11 月 8 日第 18 话，7 格里 4 格仍是低机位，新增 2 格仰视拍外婆下颌。<strong>变化可核对</strong>：第 9 话之前没有一格低于餐桌边缘，之后每话至少两格。低机位让外婆的手变大，择菜动作的指节清楚，代价是背景只剩橱柜下半截。</p>
+
+            <h3>案例时间线二：《爷爷的红白机》v1.1 与 v1.2 的手柄描线</h3>
+            <p>v1.1 在 10 月 15 日发布，手柄用简化两键画法，被读者在留言里指出和 1998 年街机厅常见的六键布局不符。v1.2 于 11 月 4 日修订，补 8 页，第 3 话第 2 格改成六键，按键旁标注 A、B、C、D、E、F。修订记录写明改动页数与格号，属于可复现的事实层；「更符合年代感」是编辑部的转述判断，不在修订说明里。</p>
+
+            <h3>数据对比：三话的格数与对白数</h3>
+            <table class="compare-table">
+              <caption>统计口径：每话正文格数，不含封面与版权页；对白按气泡计</caption>
+              <thead>
+                <tr><th>话数</th><th>格数</th><th>对白气泡</th><th>平均每格字数</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>灶台边的暑假 · 第 6 话</td><td>7</td><td>18</td><td>9.4</td></tr>
+                <tr><td>外婆的针线盒 · 第 14 话</td><td>11</td><td>3</td><td>1.8</td></tr>
+                <tr><td>阿婆讲古 · 第 9 话</td><td>9</td><td>24</td><td>7.9</td></tr>
+              </tbody>
+            </table>
+            <p><strong>对白密度差 5 倍</strong>，《外婆的针线盒》因此更依赖物件位置传达信息，顶针在第 4 格入画、第 9 格被拿起，两次出现之间隔 5 格，读者得自己连起来。这种结构适合慢慢翻，不适合一次读太多话。</p>
+
+            <h3>说法差异：适龄标注的两种口径</h3>
+            <p>编辑部把《缝纫机下的信》标为 12+，理由是 1979 年弄堂背景涉及票证与搬家。读者留言里有另一种说法：画面没有暴力与恐怖元素，10 岁也能读，问题在注释密度。两种口径的分歧点是<strong>「适龄」指理解门槛还是内容安全</strong>。当前页面按理解门槛标注，注释密度另列一个字段，两类信息分开呈现，避免把判断混在一起。</p>
+
+            <p>还有一个推测需要说明：祖孙同框的俯拍构图在第 14 话集中出现，可能是作者同期在画家庭合影研究，也可能只是题材需要。11 月 5 日上线的手绘速写第 4 批里，有 3 张与第 14 话构图接近，但没标注创作顺序，所以只能算推测。</p>
+
+            <div class="source-note">核对来源：更新记录页 10 月 12 日至 11 月 8 日；《爷爷的红白机》v1.2 修订说明；读者留言第 3 页与第 7 页。修订说明由编辑部发布，读者留言属于转述，两类信息在本段分开引用。</div>
+          </article>
+        </section>
+
+        <section class="section" id="guide" aria-labelledby="gd-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="gd-title">体验指南：三步挑一话，别从第 1 话硬啃</h2>
+              <p class="sec-desc">选集里连载与单话完结混排，先判断结构再决定读法。</p>
+            </div>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>先看话数旁的结构标签</h3>
+              <p>标「单话完结」的可以直接抽读，例如《冬至的汤圆勺》8 页；标「连载」的看最新三话，不要从第 1 话开始。《灶台边的暑假》第 16 话有前情回顾格，适合中途进入。</p>
+            </li>
+            <li>
+              <h3>对白密度决定阅读时长</h3>
+              <p>每格字数低于 3 字的话，一页约 40 秒；高于 8 字的话，一页约 1 分 20 秒。给长辈读，优先选低压气泡的《外婆的针线盒》，11 格只有 3 句对白。</p>
+            </li>
+            <li>
+              <h3>适龄标注与注释密度分开看</h3>
+              <p>《缝纫机下的信》标 12+，但每话注释 5 到 9 条，读起来比标注更费神；《阿婆讲古》标亲子共读，注释 6 处，反而更适合大人带着读。</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="compare" aria-labelledby="cp-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="cp-title">对照面板：连载与单话完结怎么选</h2>
+              <p class="sec-desc">两边条目都来自当前可读内容，按阅读习惯分。</p>
+            </div>
+          </div>
+          <div class="panel-compare">
+            <div class="panel yes">
+              <h3>适合追连载</h3>
+              <ul>
+                <li>每周三、周日固定更新，共 2 次</li>
+                <li>人物关系累积，《灶台边的暑假》18 话已建立 5 个固定配角</li>
+                <li>适合按顺序读，前情回顾格出现在每 5 话</li>
+                <li>修订版本会标注 v1.x，改动页数可查</li>
+              </ul>
+            </div>
+            <div class="panel no">
+              <h3>适合单话完结</h3>
+              <ul>
+                <li>12 话节日短篇，每话独立，无前情</li>
+                <li>《冬至的汤圆勺》《重阳登高图》都是单页起读</li>
+                <li>适龄标注更宽，8+ 与 10+ 混排</li>
+                <li>篇幅短，适合睡前读一话</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="faq" aria-labelledby="fq-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="fq-title">常见问题</h2>
+              <p class="sec-desc">问题按实际操作顺序排列，答案只说明当前收录情况。</p>
+            </div>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>选集里的话数为什么和频道数字对不上？</summary>
+              <div class="faq-body">
+                <p>频道数字按题材归属统计，一话可能同时归入两个频道。例如《阿婆讲古》既在「方言家庭小剧场」14 话内，也在「节日短篇集」的 12 话里占 2 话。统计口径写在分类入口下方，修订版本不重复计数。</p>
+              </div>
+            </details>
+            <details>
+              <summary>《缝纫机下的信》标 12+，小学生能读吗？</summary>
+              <div class="faq-body">
+                <p>适龄标注按理解门槛计算，不按内容安全。该作每话注释 5 到 9 条，涉及 1979 年上海弄堂的票证与搬家场景，10 岁读者能在大人陪同下读，独立阅读建议 12 岁以上。注释密度另列字段，可以与适龄标注分开看。</p>
+              </div>
+            </details>
+            <details>
+              <summary>修订版和原版在哪里区分？</summary>
+              <div class="faq-body">
+                <p>作品标题后带 v1.x 的为修订版。《爷爷的红白机》v1.2 于 11 月 4 日发布，补 8 页街机厅场景，第 3 话第 2 格的手柄由两键改为六键。修订说明列明改动页数与格号，原版不再单独列出。</p>
+              </div>
+            </details>
+            <details>
+              <summary>手绘速写里的辅助线是印刷瑕疵吗？</summary>
+              <div class="faq-body">
+                <p>不是。11 月 5 日上线的第 4 批 18 张原稿保留铅笔辅助线与橡皮擦痕，属于过程稿展示。每张下方附 1 到 2 句作者注解，说明该格的构图意图，部分注解提到修改次数。</p>
+              </div>
+            </details>
+            <details>
+              <summary>方言对白的注释怎么读？</summary>
+              <div class="faq-body">
+                <p>闽南语对白在气泡外侧标普通话注释，每话 4 到 6 处。《阿婆讲古》第 9 话「落雨」有 6 处注释，象声词「咑咑滴」在第 5 格，注释放在气泡右下方，不打断阅读顺序。</p>
+              </div>
+            </details>
+            <details>
+              <summary>老人视点分镜为什么大多偏低？</summary>
+              <div class="faq-body">
+                <p>低机位让手部动作放大，适合择菜、缝补这类细节叙事。《灶台边的暑假》第 9 话起把机位降到 1.05 米左右，每话至少两格低于餐桌边缘，代价是背景信息减少，橱柜只露出下半截。</p>
+              </div>
+            </details>
+            <details>
+              <summary>更新频率与公告条信息以哪个为准？</summary>
+              <div class="faq-body">
+                <p>公告条只写当次上线或修订，最新更新列表按日期列全。11 月 6 日《外婆的针线盒》第 14 话与 11 月 4 日修订版是两条独立记录，频道数字在 11 月 8 日统计时已包含。</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="section" id="comments" aria-labelledby="cm-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="cm-title">读者评论：具体到格与话的反馈</h2>
+              <p class="sec-desc">留言按发布时间排序，包含认可、中性讨论与吐槽。指向具体条目的内容保留原文措辞。</p>
+            </div>
+          </div>
+          <div class="comments">
+            <article class="comment">
+              <div class="avatar a" aria-hidden="true">林</div>
+              <div>
+                <div class="c-head"><b>林间小满</b><time datetime="2026-11-08">11-08</time></div>
+                <p>《灶台边的暑假》第 18 话的择菜口诀写成 4 句顺口溜，读完念给外婆听，她说「最后一句不对，我们那边是反过来说的」。这种能拿去对答案的细节挺好。</p>
+              </div>
+            </article>
+            <article class="comment">
+              <div class="avatar b" aria-hidden="true">周</div>
+              <div>
+                <div class="c-head"><b>周末不开电脑</b><time datetime="2026-11-07">11-07</time></div>
+                <p>《冬至的汤圆勺》8 页全无对白，动作分镜到第 5 页才看清是勺子递错了方向，前面两页有点耐心门槛。老人读可能要先翻一遍图再回头。</p>
+              </div>
+            </article>
+            <article class="comment">
+              <div class="avatar c" aria-hidden="true">陈</div>
+              <div>
+                <div class="c-head"><b>陈阿伯的邻居</b><time datetime="2026-11-06">11-06</time></div>
+                <p>针线盒第 14 话俯拍挺好，但顶针在第 4 格和第 9 格两次出现之间隔了 5 格，中间全是线轴，我翻回去找了两次。物件叙事是好，节奏可以再紧半格。</p>
+              </div>
+            </article>
+            <article class="comment">
+              <div class="avatar d" aria-hidden="true">许</div>
+              <div>
+                <div class="c-head"><b>许同学五年级</b><time datetime="2026-11-05">11-05</time></div>
+                <p>红白机 v1.2 把两键改成六键这个改动，我对照过家里旧手柄的照片，1998 年的街机厅确实常见六键。第 3 话第 2 格现在标了 A 到 F，看着舒服多了。</p>
+              </div>
+            </article>
+            <article class="comment">
+              <div class="avatar e" aria-hidden="true">郑</div>
+              <div>
+                <div class="c-head"><b>郑阿姨爱翻页</b><time datetime="2026-11-04">11-04</time></div>
+                <p>《缝纫机下的信》注释有 9 条那话，读一页要停下来看三次小字，眼睛有点累。适龄标 12+ 是能理解，但「适龄」和「看着累」是两件事，希望注释能排在一页底部集中放。</p>
+              </div>
+            </article>
+            <article class="comment">
+              <div class="avatar b" aria-hidden="true">罗</div>
+              <div>
+                <div class="c-head"><b>罗宋汤不加糖</b><time datetime="2026-11-03">11-03</time></div>
+                <p>手绘速写第 4 批有 18 张，我把《外婆的针线盒》第 14 话的构图和三张速写比对了一下，确实接近。不过创作顺序没标，说「同源」有点过头，最多算同期。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="news" aria-labelledby="nw-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="nw-title">相关资讯：11 月前一周的发布与修订</h2>
+              <p class="sec-desc">只记上线、修订、设定更新三类事件，不重复最新更新列表的条目细节，补充发布背景。</p>
+            </div>
+          </div>
+          <div class="news-grid">
+            <article class="news-item">
+              <time datetime="2026-11-08">2026-11-08</time>
+              <h3><a href="/#news">灶台暑假进入第三幕，配角增至 5 人</a></h3>
+              <p>第 18 话新增邻居家的小男孩，固定配角从 4 人增至 5 人。作者在第 17 话末尾留了半格空镜，为该角色入场做铺垫。</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-11-06">2026-11-06</time>
+              <h3><a href="/#news">针线盒改用全俯拍，一页一物</a></h3>
+              <p>第 14 话起每页只放一个物件，线轴、顶针、剪刀依次出现。全话 11 格，对白仅 3 句，是当前对白密度最低的一话。</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-11-04">2026-11-04</time>
+              <h3><a href="/#news">红白机修订说明公开改动页数</a></h3>
+              <p>v1.2 修订说明列出 8 页改动，含第 3 话第 2 格手柄按键从两键改为六键，并标注 A 至 F 键位，读者可按页核对。</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-11-03">2026-11-03</time>
+              <h3><a href="/#news">银发主角档案第 7 批更新字段</a></h3>
+              <p>新增 5 位 60 岁以上角色，字段含身高、口头禅、常穿衣物。本批起口头禅字段改为引用原话，不再转述。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="timeline" aria-labelledby="tl-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="tl-title">更新时间线：一年里值得记的几个节点</h2>
+              <p class="sec-desc">回看结构与口径的调整，不用来确定作品优劣。</p>
+            </div>
+          </div>
+          <ul class="timeline">
+            <li><time datetime="2026-09-14">2026-09-14</time><b>适龄标注拆分</b>：内容安全与理解门槛分成两个字段，先前只用单一级别。</li>
+            <li><time datetime="2026-10-12">2026-10-12</time><b>《灶台边的暑假》开载</b>：首话 6 格，此后稳定 6 到 8 格。</li>
+            <li><time datetime="2026-10-26">2026-10-26</time><b>低机位成为惯例</b>：第 9 话起每话至少两格低于餐桌边缘。</li>
+            <li><time datetime="2026-11-04">2026-11-04</time><b>修订说明标准化</b>：列出改动页数与格号，v1.x 编号沿用至今。</li>
+            <li><time datetime="2026-11-05">2026-11-05</time><b>过程稿上线</b>：手绘速写第 4 批 18 张，保留辅助线与注解。</li>
+          </ul>
+        </section>
+
+        <section class="section" id="quotes" aria-labelledby="qt-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="qt-title">创作者证言：两句原话与背景</h2>
+              <p class="sec-desc">原话按公开采访记录摘录，背景信息另列，便于判断语境。</p>
+            </div>
+          </div>
+          <div class="quote-card">
+            <blockquote>
+              外婆择菜的手会挡住脸，我一开始不敢这么画，怕读者认不出人。后来想，认不出也没关系，手比脸更说明她是谁。
+              <cite>——《灶台边的暑假》作者，10 月 26 日第 9 话发布说明</cite>
+            </blockquote>
+            <blockquote>
+              1998 年的手柄按两键画，是我懒了。读者指出后补了 8 页，改的时候才发现街机厅那几个格子的灯光也得跟着调。
+              <cite>——《爷爷的红白机》修订者，11 月 4 日 v1.2 说明</cite>
+            </blockquote>
+          </div>
+        </section>
+
+        <section class="section" id="recommend" aria-labelledby="rc-title">
+          <div class="sec-head">
+            <div>
+              <h2 id="rc-title">相关推荐：按关键词再找一圈</h2>
+              <p class="sec-desc">推荐标签对应实际频道或文章，点击进入对应板块。</p>
+            </div>
+          </div>
+          <div class="tag-cloud">
+            <a href="/#overview">祖孙同居日常漫画</a>
+            <a href="/#picks">外婆针线盒手绘分镜</a>
+            <a href="/#analysis">老人低机位分镜分析</a>
+            <a href="/#guide">方言漫画读音注释</a>
+            <a href="/#latest">修订版手柄按键还原</a>
+            <a href="/#faq">适龄标注与注释密度</a>
+            <a href="/#timeline">银发角色设定表</a>
+            <a href="/#comments">无对白动作分镜</a>
+            <a href="/#news">节日短篇集单话完结</a>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="sidebar" aria-label="侧栏导航与速览">
+        <div class="side-card">
+          <h3>板块导航</h3>
+          <nav class="side-nav" id="side-nav" aria-label="页内导航">
+            <a href="/#overview">领域概览</a>
+            <a href="/#picks">精选内容推荐</a>
+            <a href="/#latest">最新更新</a>
+            <a href="/#categories">分类入口</a>
+            <a href="/#analysis">深度解析</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#compare">对照面板</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">读者评论</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#timeline">更新时间线</a>
+            <a href="/#quotes">创作者证言</a>
+            <a href="/#recommend">相关推荐</a>
+          </nav>
+        </div>
+        <div class="side-card">
+          <h3>本周可读速览</h3>
+          <ul class="side-list">
+            <li>《灶台边的暑假》第 18 话<time datetime="2026-11-08">11-08 上线 · 7 格</time></li>
+            <li>《冬至的汤圆勺》短篇<time datetime="2026-11-07">11-07 上线 · 8 页</time></li>
+            <li>《外婆的针线盒》第 14 话<time datetime="2026-11-06">11-06 上线 · 11 格</time></li>
+            <li>《铅笔线里的一家人》第 4 批<time datetime="2026-11-05">11-05 上线 · 18 张</time></li>
+            <li>《爷爷的红白机》v1.2<time datetime="2026-11-04">11-04 修订 · 8 页</time></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>阅读提示</h3>
+          <ul class="side-list">
+            <li>连载作品每 5 话附前情回顾格</li>
+            <li>注释密度与适龄标注分开计算</li>
+            <li>修订版以 v1.x 编号，改动页数可查</li>
+            <li>过程稿保留铅笔辅助线，不是印刷瑕疵</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <span class="brand">
+          <svg viewBox="0 0 64 64" width="34" height="34" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#e8622a"/>
+            <circle cx="24" cy="26" r="7" fill="#fff4e6"/>
+            <circle cx="42" cy="26" r="7" fill="#fff4e6"/>
+            <path d="M20 42c4 6 20 6 24 0" stroke="#fff4e6" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>童颜长辈免费漫画</span>
+        </span>
+        <p class="tagline">把代际日常拆成能一起翻的格子：手绘、方言、老物件，都在同一册里。</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h3>题材频道</h3>
+          <a href="/#overview">祖孙同居日常</a>
+          <a href="/#overview">老物件回溯</a>
+          <a href="/#picks">方言家庭小剧场</a>
+          <a href="/#picks">银发主角设定</a>
+        </div>
+        <div>
+          <h3>阅读工具</h3>
+          <a href="/#guide">三步挑一话</a>
+          <a href="/#compare">连载与单话对照</a>
+          <a href="/#faq">适龄标注说明</a>
+          <a href="/#timeline">更新时间线</a>
+        </div>
+        <div>
+          <h3>栏目</h3>
+          <a href="/#analysis">分镜深度解析</a>
+          <a href="/#comments">读者留言</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#recommend">相关推荐</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-note">示例数据说明：页内话数、格数、日期与修订说明为演示用示例条目，统计口径以各板块标注为准。更新时间对应正文可核对更新项：11 月 8 日灶台第 18 话、11 月 6 日针线盒第 14 话。</span>
+      <span>© 2026 童颜长辈免费漫画 · 页面内容仅供阅读参考</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menu-btn');
+  var mobileNav = document.getElementById('mobile-nav');
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    mobileNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mobileNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.setAttribute('aria-label','展开导航菜单');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mobileNav.classList.contains('open')){
+        mobileNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  /* 搜索：本地查找板块标题、卡片标题、FAQ 问题与推荐标签 */
+  var input = document.getElementById('site-search');
+  var searchBtn = document.getElementById('search-btn');
+  var feedback = document.getElementById('search-feedback');
+
+  function collectItems(){
+    var nodes = document.querySelectorAll('#main h2, #main h3, #main summary, #recommend .tag-cloud a, #categories .cat-index a, #picks .feat h3, #comments .comment p');
+    var list = [];
+    nodes.forEach(function(n){
+      var text = (n.textContent || '').trim();
+      if(!text) return;
+      var target = n.closest('section') || n;
+      list.push({el:n, text:text, id:target.id || ''});
+    });
+    return list;
+  }
+
+  function doSearch(){
+    var q = (input.value || '').trim();
+    if(!q){
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      return;
+    }
+    var items = collectItems();
+    var hits = items.filter(function(it){ return it.text.indexOf(q) !== -1; });
+    if(hits.length === 0){
+      feedback.classList.add('show');
+      feedback.textContent = '没有找到「' + q + '」相关栏目，试试「针线盒」「方言」「分镜」或「冬至」。';
+      return;
+    }
+    feedback.classList.remove('show');
+    feedback.textContent = '找到 ' + hits.length + ' 处匹配：「' + hits[0].text.slice(0, 30) + '」';
+    var first = hits[0].el;
+    if(typeof first.scrollIntoView === 'function'){
+      first.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+    if(typeof first.focus === 'function'){
+      first.setAttribute('tabindex','-1');
+      first.focus({preventScroll:true});
+    }
+  }
+
+  if(searchBtn){ searchBtn.addEventListener('click', doSearch); }
+  if(input){
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('to-top');
+  function onScroll(){
+    if(window.scrollY > 480){
+      toTop.classList.add('show');
+    } else {
+      toTop.classList.remove('show');
+    }
+    updateActiveNav();
+  }
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 侧栏高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#side-nav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function updateActiveNav(){
+    var threshold = 160;
+    var currentIdx = -1;
+    for(var i=0;i<sections.length;i++){
+      var rect = sections[i].getBoundingClientRect();
+      if(rect.top <= threshold){ currentIdx = i; }
+    }
+    sideLinks.forEach(function(a, i){
+      if(i === currentIdx){ a.classList.add('active'); }
+      else { a.classList.remove('active'); }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', updateActiveNav);
+  onScroll();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "童颜长辈免费漫画",
+  "description": "面向全家共读的免费漫画选集，收录祖辈与孙辈日常、手绘分镜、家庭小剧场与无广告试读章节。",
+  "inLanguage": "zh-CN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "选集里的话数为什么和频道数字对不上？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "频道数字按题材归属统计，一话可能同时归入两个频道。《阿婆讲古》既在方言家庭小剧场 14 话内，也在节日短篇集的 12 话里占 2 话。统计口径写在分类入口下方，修订版本不重复计数。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《缝纫机下的信》标 12+，小学生能读吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "适龄标注按理解门槛计算，不按内容安全。该作每话注释 5 到 9 条，涉及 1979 年上海弄堂的票证与搬家场景，10 岁读者能在大人陪同下读，独立阅读建议 12 岁以上。注释密度另列字段，可与适龄标注分开看。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "修订版和原版在哪里区分？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "作品标题后带 v1.x 的为修订版。《爷爷的红白机》v1.2 于 11 月 4 日发布，补 8 页街机厅场景，第 3 话第 2 格的手柄由两键改为六键。修订说明列明改动页数与格号，原版不再单独列出。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "手绘速写里的辅助线是印刷瑕疵吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是。11 月 5 日上线的第 4 批 18 张原稿保留铅笔辅助线与橡皮擦痕，属于过程稿展示。每张下方附 1 到 2 句作者注解，说明该格的构图意图，部分注解提到修改次数。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "方言对白的注释怎么读？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "闽南语对白在气泡外侧标普通话注释，每话 4 到 6 处。《阿婆讲古》第 9 话「落雨」有 6 处注释，象声词「咑咑滴」在第 5 格，注释放在气泡右下方，不打断阅读顺序。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "老人视点分镜为什么大多偏低？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "低机位让手部动作放大，适合择菜、缝补这类细节叙事。《灶台边的暑假》第 9 话起把机位降到 1.05 米左右，每话至少两格低于餐桌边缘，代价是背景信息减少，橱柜只露出下半截。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "更新频率与公告条信息以哪个为准？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "公告条只写当次上线或修订，最新更新列表按日期列全。11 月 6 日《外婆的针线盒》第 14 话与 11 月 4 日修订版是两条独立记录，频道数字在 11 月 8 日统计时已包含。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+  </html>
