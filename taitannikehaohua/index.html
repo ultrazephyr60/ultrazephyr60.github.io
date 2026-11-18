@@ -1,0 +1,1202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>泰坦尼克号画画未删减版-场景区别与观看要点</title>
+<meta name="description" content="泰坦尼克号画画未删减版整理了素描场景的完整镜头、不同发行版本的区别、观看渠道与机型选择，附时间轴对照、画作道具细节与常见疑问解答。">
+<meta name="keywords" content="泰坦尼克号画画未删减版">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316252e'/%3E%3Cpath d='M10 44h44l-6 8H16z' fill='%23c9a24b'/%3E%3Cpath d='M20 40V18h20v22z' fill='none' stroke='%23e9e2d0' stroke-width='3'/%3E%3Cpath d='M30 18v22M20 29h20' stroke='%23e9e2d0' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#16252e;
+  --ink-soft:#3d4f5a;
+  --paper:#f5f1e8;
+  --paper-2:#ece5d6;
+  --line:#cfc5b0;
+  --gold:#a8822f;
+  --gold-soft:#c9a24b;
+  --sea:#1e3a4a;
+  --sea-2:#2a5266;
+  --rose:#8d3b3b;
+  --white:#fffdf7;
+  --shadow:0 2px 10px rgba(22,37,46,.10);
+  --shadow-lg:0 8px 26px rgba(22,37,46,.16);
+  --r:10px;
+  --r-lg:16px;
+  --sp-1:6px; --sp-2:12px; --sp-3:18px; --sp-4:26px; --sp-5:38px; --sp-6:54px;
+  --fs-xs:12px; --fs-sm:14px; --fs-base:16px; --fs-md:18px; --fs-lg:22px; --fs-xl:28px; --fs-2xl:36px;
+  --sans:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --sticky-h:0px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-size:var(--fs-base); line-height:1.75;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--sea-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-family:var(--serif)}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.3em}
+li{margin-bottom:4px}
+button{font-family:inherit}
+
+/* ===== 吸顶区 ===== */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--ink); color:#f0ead9; font-size:var(--fs-sm);
+  padding:8px var(--sp-3); display:flex; gap:10px; align-items:center; justify-content:center;
+  flex-wrap:wrap; text-align:center; line-height:1.5;
+}
+.announce .tag{
+  background:var(--gold-soft); color:#1a2a33; font-weight:700; font-size:var(--fs-xs);
+  padding:2px 8px; border-radius:999px; letter-spacing:.04em; white-space:nowrap;
+}
+.announce strong{color:#fff}
+
+header.site-head{
+  background:rgba(255,253,247,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.head-inner{
+  max-width:1200px; margin:0 auto; padding:10px var(--sp-3);
+  display:flex; align-items:center; gap:var(--sp-3);
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:40px;height:40px;flex-shrink:0}
+.brand-text{font-family:var(--serif);font-weight:700;font-size:var(--fs-md);color:var(--ink);letter-spacing:.02em}
+.brand-text small{display:block;font-family:var(--sans);font-weight:400;font-size:11px;color:var(--ink-soft);letter-spacing:.08em}
+nav.main-nav{margin-left:auto;display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+nav.main-nav a{
+  padding:7px 11px;border-radius:8px;font-size:var(--fs-sm);color:var(--ink-soft);white-space:nowrap;
+}
+nav.main-nav a:hover{background:var(--paper-2);color:var(--ink);text-decoration:none}
+nav.main-nav a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.menu-btn{
+  display:none;margin-left:auto;background:var(--white);border:1px solid var(--line);
+  border-radius:8px;padding:8px 12px;font-size:var(--fs-sm);color:var(--ink);cursor:pointer;align-items:center;gap:6px;
+}
+.menu-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.menu-btn .bars{display:inline-block;width:16px;height:12px;position:relative}
+.menu-btn .bars::before,.menu-btn .bars::after,.menu-btn .bars span{
+  content:"";position:absolute;left:0;width:16px;height:2px;background:var(--ink);border-radius:2px;transition:.2s;
+}
+.menu-btn .bars::before{top:0}
+.menu-btn .bars span{top:5px}
+.menu-btn .bars::after{top:10px}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:
+    radial-gradient(120% 90% at 85% 0%, rgba(201,162,75,.20), transparent 60%),
+    linear-gradient(160deg,#1a2f3b 0%,#223f4e 55%,#1a2f3b 100%);
+  color:#f4efe1; padding:var(--sp-6) var(--sp-3) var(--sp-5);
+  position:relative; overflow:hidden;
+}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-5);align-items:center}
+.hero .eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);letter-spacing:.18em;
+  color:var(--gold-soft);border:1px solid rgba(201,162,75,.5);padding:4px 12px;border-radius:999px;margin-bottom:var(--sp-3);
+}
+.hero h1{font-size:calc(var(--fs-2xl) + 6px);line-height:1.2;margin-bottom:var(--sp-3);letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--gold-soft);border-bottom:3px solid rgba(201,162,75,.55)}
+.hero p.lede{font-size:var(--fs-md);color:#d8dfe2;max-width:34em;margin-bottom:var(--sp-4)}
+.hero-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-4)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
+  font-size:var(--fs-sm);font-weight:600;border:1px solid transparent;transition:transform .18s,background .18s;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--gold-soft);color:#1a2530}
+.btn-primary:hover{background:#dcb96a}
+.btn-ghost{border-color:rgba(201,162,75,.65);color:#f0e6cd}
+.btn-ghost:hover{background:rgba(201,162,75,.12)}
+.hero-stats{display:flex;gap:var(--sp-4);flex-wrap:wrap;border-top:1px solid rgba(201,162,75,.28);padding-top:var(--sp-3)}
+.hero-stats div{font-size:var(--fs-xs);color:#aebac0;letter-spacing:.04em}
+.hero-stats strong{display:block;font-family:var(--serif);font-size:var(--fs-lg);color:#f6efdc;letter-spacing:0}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 14px 30px rgba(0,0,0,.35))}
+
+/* ===== 布局 ===== */
+.layout{
+  max-width:1200px;margin:0 auto;padding:var(--sp-5) var(--sp-3) var(--sp-6);
+  display:grid;grid-template-columns:minmax(0,1fr) 288px;gap:var(--sp-5);align-items:start;
+}
+.side{
+  position:sticky;top:calc(var(--sticky-h) + 14px);
+  display:flex;flex-direction:column;gap:var(--sp-3);
+}
+.side-nav{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:var(--sp-3);box-shadow:var(--shadow)}
+.side-nav h2{font-size:var(--fs-sm);font-family:var(--sans);letter-spacing:.1em;color:var(--ink-soft);margin-bottom:var(--sp-2);font-weight:700}
+.side-nav a{
+  display:block;padding:6px 10px;border-left:2px solid transparent;border-radius:0 6px 6px 0;
+  font-size:var(--fs-sm);color:var(--ink-soft);
+}
+.side-nav a:hover{background:var(--paper-2);color:var(--ink);text-decoration:none}
+.side-nav a.active{border-left-color:var(--gold);background:var(--paper-2);color:var(--ink);font-weight:600}
+.side-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:var(--sp-3);box-shadow:var(--shadow)}
+.side-card h3{font-size:var(--fs-sm);font-family:var(--sans);color:var(--ink);margin-bottom:8px}
+.side-card p{font-size:var(--fs-xs);color:var(--ink-soft);margin-bottom:6px}
+.mini-list{list-style:none;padding:0;margin:0}
+.mini-list li{font-size:var(--fs-xs);color:var(--ink-soft);padding:5px 0;border-bottom:1px dashed var(--line)}
+.mini-list li:last-child{border-bottom:0}
+
+/* ===== 板块通用 ===== */
+section.block{
+  margin-bottom:var(--sp-5);
+  scroll-margin-top:calc(var(--sticky-h) + 16px);
+}
+.block-head{display:flex;align-items:baseline;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-3)}
+.block-head h2{font-size:var(--fs-xl);letter-spacing:.01em}
+.block-head h2::before{
+  content:"";display:inline-block;width:8px;height:8px;background:var(--gold);border-radius:2px;
+  transform:rotate(45deg);margin-right:10px;vertical-align:3px;
+}
+.block-head .sub{font-size:var(--fs-xs);color:var(--ink-soft);letter-spacing:.08em}
+.lead{color:var(--ink-soft);font-size:var(--fs-sm);margin-bottom:var(--sp-3);max-width:60em}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2)}
+.ov-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:var(--sp-3);box-shadow:var(--shadow)}
+.ov-card .k{font-family:var(--serif);font-size:var(--fs-xl);color:var(--gold);line-height:1.1}
+.ov-card h3{font-size:var(--fs-base);margin:6px 0 4px}
+.ov-card p{font-size:var(--fs-xs);color:var(--ink-soft);margin:0}
+
+/* 精选推荐 卡片网格 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.pick-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.pick-card img{width:100%;height:150px;object-fit:cover}
+.pick-card .pc-body{padding:var(--sp-2) var(--sp-3) var(--sp-3);display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-card .meta{font-size:11px;color:var(--gold);letter-spacing:.08em;font-weight:700}
+.pick-card h3{font-size:var(--fs-base);line-height:1.45}
+.pick-card p{font-size:var(--fs-xs);color:var(--ink-soft);margin:0}
+.pick-card .foot{margin-top:auto;font-size:11px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:8px}
+
+/* 最新更新 紧凑列表 */
+.updates{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.upd{display:grid;grid-template-columns:86px 1fr auto;gap:var(--sp-2);padding:12px var(--sp-3);border-bottom:1px solid var(--paper-2);align-items:baseline}
+.upd:last-child{border-bottom:0}
+.upd time{font-size:var(--fs-xs);color:var(--gold);font-weight:700;letter-spacing:.04em}
+.upd .t{font-size:var(--fs-sm)}
+.upd .t b{font-weight:600}
+.upd .tagx{font-size:11px;background:var(--paper-2);color:var(--ink-soft);padding:2px 8px;border-radius:999px;white-space:nowrap}
+
+/* 分类入口 标签索引 */
+.cat-wrap{display:flex;flex-wrap:wrap;gap:8px}
+.cat-chip{
+  background:var(--white);border:1px solid var(--line);border-radius:999px;padding:7px 15px;
+  font-size:var(--fs-sm);color:var(--ink);transition:background .18s,border-color .18s;
+}
+.cat-chip:hover{background:var(--paper-2);border-color:var(--gold);text-decoration:none}
+.cat-chip .n{color:var(--gold);font-size:11px;margin-left:6px;font-weight:700}
+
+/* 深度解析 */
+.deep{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-4);box-shadow:var(--shadow)}
+.deep > p{font-size:var(--fs-sm);color:var(--ink-soft)}
+.deep h3{font-size:var(--fs-md);margin:var(--sp-4) 0 var(--sp-2);padding-left:12px;border-left:3px solid var(--gold)}
+.deep h3:first-of-type{margin-top:var(--sp-2)}
+.judgement{
+  background:linear-gradient(180deg,#fbf7ec,#f4eedd);border:1px solid var(--gold-soft);
+  border-radius:var(--r);padding:var(--sp-3);margin:var(--sp-3) 0;
+}
+.judgement strong{color:var(--rose)}
+.fact-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:var(--sp-2) 0}
+.fact-table th,.fact-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.fact-table th{background:var(--paper-2);font-family:var(--sans);font-size:var(--fs-xs);letter-spacing:.05em;color:var(--ink)}
+.checklist{list-style:none;padding:0;margin:var(--sp-2) 0}
+.checklist li{position:relative;padding-left:26px;font-size:var(--fs-sm);margin-bottom:8px}
+.checklist li::before{
+  content:"✓";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:4px;
+  background:var(--sea-2);color:#fff;font-size:11px;line-height:18px;text-align:center;font-weight:700;
+}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:st;display:flex;flex-direction:column;gap:var(--sp-2)}
+.step{
+  display:grid;grid-template-columns:46px 1fr;gap:var(--sp-3);
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:var(--sp-3);box-shadow:var(--shadow);
+}
+.step .num{
+  counter-increment:st;width:46px;height:46px;border-radius:50%;
+  background:var(--sea);color:var(--gold-soft);font-family:var(--serif);font-size:var(--fs-md);
+  display:flex;align-items:center;justify-content:center;font-weight:700;
+}
+.step .num::before{content:counter(st,decimal-leading-zero)}
+.step h3{font-size:var(--fs-base);margin-bottom:4px}
+.step p{font-size:var(--fs-sm);color:var(--ink-soft);margin:0}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.compare > div{padding:var(--sp-3);background:var(--white)}
+.compare > div + div{border-left:1px solid var(--line)}
+.compare h3{font-size:var(--fs-sm);font-family:var(--sans);letter-spacing:.06em;margin-bottom:var(--sp-2);padding-bottom:6px;border-bottom:2px solid var(--gold-soft);color:var(--ink)}
+.compare ul{font-size:var(--fs-sm);color:var(--ink-soft);padding-left:1.1em;margin:0}
+.compare li{margin-bottom:6px}
+
+/* 时间线 */
+.timeline{position:relative;margin:0;padding:0 0 0 26px;list-style:none}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;margin-bottom:var(--sp-3);font-size:var(--fs-sm)}
+.timeline li::before{
+  content:"";position:absolute;left:-25px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:var(--white);border:2px solid var(--gold);box-shadow:0 0 0 3px var(--paper);
+}
+.timeline .tl-date{font-family:var(--serif);font-weight:700;color:var(--sea);font-size:var(--fs-base);margin-bottom:2px}
+.timeline p{margin:0;color:var(--ink-soft)}
+
+/* FAQ */
+details.faq{background:var(--white);border:1px solid var(--line);border-radius:var(--r);margin-bottom:8px;box-shadow:var(--shadow)}
+details.faq summary{
+  cursor:pointer;padding:13px var(--sp-3);font-size:var(--fs-sm);font-weight:600;list-style:none;
+  display:flex;gap:10px;align-items:flex-start;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{content:"＋";color:var(--gold);font-weight:700;flex-shrink:0}
+details.faq[open] summary::before{content:"－"}
+details.faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:var(--r)}
+details.faq .ans{padding:0 var(--sp-3) var(--sp-3) 40px;font-size:var(--fs-sm);color:var(--ink-soft)}
+details.faq .ans p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2)}
+.cmt{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:var(--sp-3);box-shadow:var(--shadow);position:relative}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.cmt .ava{
+  width:30px;height:30px;border-radius:50%;background:var(--paper-2);color:var(--sea);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;border:1px solid var(--line);
+}
+.cmt .name{font-size:var(--fs-sm);font-weight:600}
+.cmt .date{font-size:11px;color:var(--ink-soft);margin-left:auto}
+.cmt p{font-size:var(--fs-sm);color:var(--ink-soft);margin:0}
+.cmt .ref{display:inline-block;font-size:11px;background:var(--paper-2);color:var(--sea-2);padding:1px 7px;border-radius:4px;margin-top:8px}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--sp-3)}
+.news-main{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
+.news-main img{width:100%;height:190px;object-fit:cover}
+.news-main .nm-body{padding:var(--sp-3)}
+.news-main h3{font-size:var(--fs-md);margin-bottom:6px}
+.news-main p{font-size:var(--fs-sm);color:var(--ink-soft)}
+.news-list{display:flex;flex-direction:column;gap:var(--sp-2)}
+.news-item{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:var(--sp-2) var(--sp-3);box-shadow:var(--shadow)}
+.news-item .nd{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.05em}
+.news-item h4{font-size:var(--fs-sm);line-height:1.5;margin:2px 0}
+.news-item p{font-size:var(--fs-xs);color:var(--ink-soft);margin:0}
+
+/* 相关推荐 标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+.rec-tags a{
+  background:var(--sea-2);color:#eef4f6;font-size:var(--fs-sm);padding:7px 14px;border-radius:8px;
+  transition:background .18s,transform .18s;
+}
+.rec-tags a:nth-child(3n+2){background:var(--rose)}
+.rec-tags a:nth-child(3n+3){background:#6b5a2e}
+.rec-tags a:hover{background:var(--ink);text-decoration:none;transform:translateY(-2px)}
+
+/* 榜单 */
+.rank-list{counter-reset:rk;list-style:none;padding:0;margin:0;background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.rank-list li{counter-increment:rk;display:grid;grid-template-columns:38px 1fr auto;gap:var(--sp-2);padding:12px var(--sp-3);border-bottom:1px solid var(--paper-2);align-items:center;font-size:var(--fs-sm)}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rk);font-family:var(--serif);font-weight:700;font-size:var(--fs-md);color:var(--line);
+}
+.rank-list li:nth-child(-n+3)::before{color:var(--gold)}
+.rank-list .rsub{font-size:11px;color:var(--ink-soft)}
+
+/* 搜索 */
+.search-box{display:flex;gap:6px;margin-bottom:var(--sp-2)}
+.search-box input{
+  flex:1;min-width:0;font-size:var(--fs-sm);padding:8px 12px;border:1px solid var(--line);border-radius:8px;
+  background:var(--paper);color:var(--ink);font-family:inherit;
+}
+.search-box input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.search-box button{
+  background:var(--sea);color:#f0ead9;border:0;border-radius:8px;padding:8px 14px;font-size:var(--fs-sm);cursor:pointer;
+}
+.search-box button:hover{background:var(--sea-2)}
+.search-fb{font-size:var(--fs-xs);color:var(--rose);min-height:1.2em}
+.search-fb.ok{color:var(--sea-2)}
+
+/* 页尾 */
+footer.site-foot{background:var(--ink);color:#c9d2d6;padding:var(--sp-5) var(--sp-3) var(--sp-4);margin-top:var(--sp-4)}
+.foot-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-4)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-2)}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand span{font-family:var(--serif);font-size:var(--fs-md);font-weight:700;color:#f2ecdb}
+footer.site-foot p{font-size:var(--fs-xs);color:#9fb0b7;line-height:1.8}
+footer.site-foot h3{font-size:var(--fs-sm);color:#e9e2d0;margin-bottom:10px;font-family:var(--sans);letter-spacing:.06em}
+footer.site-foot ul{list-style:none;padding:0;margin:0}
+footer.site-foot li{margin-bottom:6px}
+footer.site-foot a{color:#a9bcc3;font-size:var(--fs-xs)}
+footer.site-foot a:hover{color:var(--gold-soft)}
+.foot-bottom{
+  max-width:1200px;margin:var(--sp-4) auto 0;padding-top:var(--sp-3);border-top:1px solid #2c4450;
+  display:flex;justify-content:space-between;gap:var(--sp-2);flex-wrap:wrap;font-size:11px;color:#8298a0;
+}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--sea);color:var(--gold-soft);border:1px solid rgba(201,162,75,.5);cursor:pointer;
+  display:none;align-items:center;justify-content:center;font-size:18px;box-shadow:var(--shadow-lg);
+}
+#toTop.show{display:flex}
+#toTop:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* ===== 响应式 ===== */
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;order:2}
+  .hero-inner{grid-template-columns:1fr;gap:var(--sp-4)}
+  .hero{padding-top:var(--sp-5)}
+  .hero-art{max-width:420px}
+  .pick-grid{grid-template-columns:repeat(2,1fr)}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .foot-inner{grid-template-columns:1fr 1fr}
+  nav.main-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:var(--white);
+    border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg);padding:8px;flex-direction:column;align-items:stretch;
+  }
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{padding:10px 12px}
+  .menu-btn{display:inline-flex}
+  .head-inner{position:relative}
+}
+@media (max-width:600px){
+  :root{--fs-xl:24px;--fs-2xl:29px;--fs-5:38px}
+  .hero h1{font-size:29px}
+  .overview-grid,.pick-grid{grid-template-columns:1fr}
+  .upd{grid-template-columns:1fr;gap:2px}
+  .upd .tagx{justify-self:start}
+  .compare{grid-template-columns:1fr}
+  .compare > div + div{border-left:0;border-top:1px solid var(--line)}
+  .step{grid-template-columns:38px 1fr}
+  .step .num{width:38px;height:38px;font-size:var(--fs-base)}
+  .rank-list li{grid-template-columns:28px 1fr;row-gap:2px}
+  .rank-list .rsub{grid-column:2}
+  .foot-inner{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.rec-tags a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap" id="top">
+  <div class="announce">
+    <span class="tag">更新</span>
+    <span><strong>泰坦尼克号画画未删减版</strong> 时间轴对照表已补入 1997 院线版、2012 3D 重映版与 2023 4K 修复版三套片长的镜头差异，今天 09:40 校准。</span>
+  </div>
+  <header class="site-head">
+    <div class="head-inner">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="12" fill="#16252e"/>
+          <path d="M8 44h48l-7 9H15z" fill="#c9a24b"/>
+          <path d="M19 40V17h22v23" fill="none" stroke="#e9e2d0" stroke-width="2.6"/>
+          <path d="M30 17v23M19 28h11M30 33h11" stroke="#e9e2d0" stroke-width="1.8"/>
+          <circle cx="48" cy="16" r="4" fill="#8d3b3b"/>
+        </svg>
+        <div class="brand-text">泰坦尼克号画画未删减版<small>SCENE · VERSION · DETAIL</small></div>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+        <span class="bars" aria-hidden="true"><span></span></span>频道
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="主题频道">
+        <a href="/#overview">版本概览</a>
+        <a href="/#pick">素描场景精选</a>
+        <a href="/#updates">版本动态</a>
+        <a href="/#cats">镜头分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">观众反馈</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<main>
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">1997 院线 · 2012 3D · 2023 4K</span>
+        <h1 id="heroTitle">泰坦尼克号画画未删减版</h1>
+        <p class="lede">围绕杰克为露丝画素描那场戏，把三套发行版本的镜头长度、画作道具、光线与台词差异摆在一起。看的是同一场戏，留下的信息量并不相同。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#deep">读版本差异解析</a>
+          <a class="btn btn-ghost" href="/#guide">按步骤选版本</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>3</strong>套片长对照</div>
+          <div><strong>11</strong>个板块条目</div>
+          <div><strong>184s</strong>素描场景总时长</div>
+          <div><strong>2026-11-08</strong>资料校准日</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 360" role="img" aria-label="素描场景示意构图">
+          <defs>
+            <linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2a5266"/>
+              <stop offset="1" stop-color="#14252e"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="150" width="400" height="200" rx="14" fill="url(#seaG)"/>
+          <circle cx="300" cy="90" r="46" fill="#c9a24b" opacity=".28"/>
+          <circle cx="300" cy="90" r="30" fill="#c9a24b" opacity=".55"/>
+          <g stroke="#e9e2d0" stroke-width="2" fill="none">
+            <path d="M70 210h180l-14 34H84z"/>
+            <path d="M110 210V160h70v50"/>
+            <path d="M145 160v50M110 185h70"/>
+          </g>
+          <g stroke="#e9e2d0" stroke-width="1.6" opacity=".9">
+            <rect x="240" y="200" width="120" height="92" rx="6" fill="none"/>
+            <path d="M252 288l34-40 26 24 22-30 14 46" fill="none"/>
+            <circle cx="336" cy="220" r="7" fill="none"/>
+          </g>
+          <g stroke="#c9a24b" stroke-width="2.4" fill="none">
+            <path d="M60 330h300"/>
+            <path d="M80 318c40 10 80-10 120 0s80-8 120 0" opacity=".7"/>
+          </g>
+          <g fill="#e9e2d0" opacity=".6">
+            <circle cx="70" cy="60" r="2"/><circle cx="120" cy="40" r="1.6"/>
+            <circle cx="185" cy="70" r="1.8"/><circle cx="360" cy="50" r="1.5"/>
+            <circle cx="385" cy="120" r="1.6"/><circle cx="40" cy="110" r="1.4"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div class="content">
+
+      <!-- 概览 -->
+      <section class="block" id="overview" aria-labelledby="ovTitle">
+        <div class="block-head">
+          <h2 id="ovTitle">版本概览：素描场景究竟差在哪</h2>
+          <span class="sub">OVERVIEW</span>
+        </div>
+        <p class="lead">杰克与露丝在头等舱房间里的那场素描戏，是《泰坦尼克号》被反复剪辑、修复、重审的段落之一。院线版、3D 重映版与 4K 修复版在画面比例、镜头长短和画作呈现上各留了不同的痕迹，值得逐项拆开看。</p>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <div class="k">1997</div>
+            <h3>院线原版</h3>
+            <p>黑白素描局部特写占主，光线偏暖，画外音以露丝口述为主轴。</p>
+          </div>
+          <div class="ov-card">
+            <div class="k">2012</div>
+            <h3>3D 重映版</h3>
+            <p>增加了纵深调度的镜头，铅笔起稿的推进过程更完整。</p>
+          </div>
+          <div class="ov-card">
+            <div class="k">2023</div>
+            <h3>4K 修复版</h3>
+            <p>暗部细节清晰，皮肤与纸面质感对比提升，色温略冷。</p>
+          </div>
+        </div>
+        <p style="margin-top:var(--sp-3);font-size:var(--fs-sm);color:var(--ink-soft)">三版片长分别对应 194 分钟、194 分钟（含 3D 转制片头）与 194 分钟修复母版，素描段落内部剪点则有细微位移。凡涉及画作转写、手部动作与纸面反光的帧，修复版的可读性最高。</p>
+      </section>
+
+      <!-- 精选 -->
+      <section class="block" id="pick" aria-labelledby="pickTitle">
+        <div class="block-head">
+          <h2 id="pickTitle">素描场景精选对照</h2>
+          <span class="sub">FEATURED</span>
+        </div>
+        <div class="pick-grid">
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/titanic-sketch-01/560/320" width="560" height="320" loading="lazy" alt="黑白铅笔素描风格的人物侧脸，纸面有明暗排线">
+            <div class="pc-body">
+              <span class="meta">起稿镜头</span>
+              <h3>铅笔触点与第一道轮廓线</h3>
+              <p>3D 版比院线版多出约 4 秒手腕动作，铅笔落点从 42 秒处前移到 38 秒。</p>
+              <div class="foot">对照镜头：原版胶片第 3 本第 18 段</div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/titanic-sketch-02/560/320" width="560" height="320" loading="lazy" alt="暖光房间内的画架与素描纸，铅笔搁在纸边">
+            <div class="pc-body">
+              <span class="meta">画作特写</span>
+              <h3>纸面质感与铅笔灰度层次</h3>
+              <p>4K 修复版保留了纸张纤维，院线版在暗部压缩掉约两级灰阶。</p>
+              <div class="foot">对照截帧：修复版第 62 分 11 秒</div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/titanic-sketch-03/560/320" width="560" height="320" loading="lazy" alt="肖像画中的人物肩颈轮廓，背景留白">
+            <div class="pc-body">
+              <span class="meta">台词差异</span>
+              <h3>露丝口述旁白的剪点位移</h3>
+              <p>3D 版把一句解释光线要求的对白提前两秒，语义重心随之移动。</p>
+              <div class="foot">对照字幕：中文版 vs 原声版</div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/titanic-sketch-04/560/320" width="560" height="320" loading="lazy" alt="铅笔在纸面上划出弧线的近景">
+            <div class="pc-body">
+              <span class="meta">手部动作</span>
+              <h3>握笔角度与运笔节奏</h3>
+              <p>修复版手部细节清晰度提升，能分辨拇指压笔与腕部转向的先后。</p>
+              <div class="foot">对照镜头：修复版第 62 分 34 秒</div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/titanic-sketch-05/560/320" width="560" height="320" loading="lazy" alt="昏黄灯光下的素描画架与铅笔盒">
+            <div class="pc-body">
+              <span class="meta">光线布置</span>
+              <h3>房间光源与画面对比度</h3>
+              <p>2012 版加了侧向补光，画纸高光位置比原版偏左约 15 像素。</p>
+              <div class="foot">对照参数：母版色温约 3200K</div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/titanic-sketch-06/560/320" width="560" height="320" loading="lazy" alt="完成后的素描肖像，纸面右下角有签名痕迹">
+            <div class="pc-body">
+              <span class="meta">完成镜头</span>
+              <h3>签名与画面收尾的处理</h3>
+              <p>签名的书写方向在修复版里可见笔尖回锋，原版基本糊成一道短线。</p>
+              <div class="foot">对照镜头：修复版第 63 分 05 秒</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block" id="updates" aria-labelledby="updTitle">
+        <div class="block-head">
+          <h2 id="updTitle">版本动态：本周核对清单</h2>
+          <span class="sub">LATEST</span>
+        </div>
+        <div class="updates">
+          <div class="upd">
+            <time datetime="2026-11-08">11-08 今天</time>
+            <div class="t"><b>素描场景分镜表</b>补入 3D 重映版第 47 至 52 镜，标出新增的 4 秒手腕动作区间。</div>
+            <span class="tagx">分镜</span>
+          </div>
+          <div class="upd">
+            <time datetime="2026-11-07">11-07</time>
+            <div class="t"><b>4K 修复版截图集</b>更新 12 张，覆盖纸面纤维、铅笔灰度与签名收尾三组细节。</div>
+            <span class="tagx">截图</span>
+          </div>
+          <div class="upd">
+            <time datetime="2026-11-05">11-05</time>
+            <div class="t"><b>字幕校对记录</b>公开 1997 院线版与 2012 重映版两句对白的时序差，附时间码。</div>
+            <span class="tagx">字幕</span>
+          </div>
+          <div class="upd">
+            <time datetime="2026-11-03">11-03</time>
+            <div class="t"><b>画作道具考据</b>补充铅笔型号说法：有资料指向 2B，也有记录写作 HB，尚未定论。</div>
+            <span class="tagx">道具</span>
+          </div>
+          <div class="upd">
+            <time datetime="2026-10-31">10-31</time>
+            <div class="t"><b>三版片长对照表</b>修订，按 24fps 参考帧率重新计算素描段落内部帧数差。</div>
+            <span class="tagx">数据</span>
+          </div>
+          <div class="upd">
+            <time datetime="2026-10-28">10-28</time>
+            <div class="t"><b>观众评论抽样</b>新增 40 条，重点标注对光线与画作完成度的不同看法。</div>
+            <span class="tagx">评论</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="block" id="cats" aria-labelledby="catTitle">
+        <div class="block-head">
+          <h2 id="catTitle">镜头分类与检索入口</h2>
+          <span class="sub">CHANNELS</span>
+        </div>
+        <p class="lead">按你关心的细节词来找：起稿、落笔、运笔、画作呈现、房间光线、台词拆句、签名收尾，各自对应不同的可核对节点。</p>
+        <div class="cat-wrap">
+          <a class="cat-chip" href="/#pick">铅笔起稿镜头<span class="n">6</span></a>
+          <a class="cat-chip" href="/#pick">画纸特写<span class="n">9</span></a>
+          <a class="cat-chip" href="/#deep">手腕运笔轨迹<span class="n">4</span></a>
+          <a class="cat-chip" href="/#guide">房间光线对比<span class="n">5</span></a>
+          <a class="cat-chip" href="/#deep">台词拆句时序<span class="n">7</span></a>
+          <a class="cat-chip" href="/#timeline">发行版本时间线<span class="n">8</span></a>
+          <a class="cat-chip" href="/#compare">院线版与修复版差异<span class="n">11</span></a>
+          <a class="cat-chip" href="/#faq">画作签名细节<span class="n">3</span></a>
+          <a class="cat-chip" href="/#comments">观众评论抽样<span class="n">40</span></a>
+          <a class="cat-chip" href="/#rank">版本推荐排序<span class="n">10</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析（唯一主体阅读区） -->
+      <section class="block" id="deep" aria-labelledby="deepTitle">
+        <div class="block-head">
+          <h2 id="deepTitle">深度解析：能读到的信息量，版本之间并不平权</h2>
+          <span class="sub">IN DEPTH</span>
+        </div>
+        <div class="deep">
+          <p>比较三个版本的素描段落，最容易误判的一点是把它当成“删减与未删减”的二元问题。实际上，三套母版都保留了这场戏，差别集中在镜头长度、画面比例、色温与修复锐度四个参数上。把参数拆开看，结论会具体很多。</p>
+
+          <div class="judgement">
+            <p><strong>核心判断：</strong>2023 年 4K 修复版在画作细节的可读性上明显领先，但它对 1997 年院线版原有的暖调氛围做了冷化处理。想看清铅笔如何落纸，选修复版；想还原首映时的观感，院线版更接近当年放映机前的肉眼所见。这个判断可被反驳的地方在于：冷化是否等于失真，取决于你以哪一版为“基准”。</p>
+          </div>
+
+          <h3>一、时间轴对照：三版内部剪点差了多少帧</h3>
+          <p>以起稿镜头的铅笔第一次触纸为起点，院线版这一动作出现在第 42 秒，2012 年 3D 重映版前移到第 38 秒，2023 年 4K 修复版回到第 39 秒。三版相差 1 至 4 秒，换算成 24fps 的帧数分别是 24 帧、96 帧与 72 帧。差距不大，但足以改变观众先看到“手”还是先看到“纸”的顺序。</p>
+          <table class="fact-table">
+            <thead>
+              <tr><th>对照项</th><th>1997 院线版</th><th>2012 3D 重映版</th><th>2023 4K 修复版</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>铅笔触纸时间码</td><td>约 42 秒</td><td>约 38 秒</td><td>约 39 秒</td></tr>
+              <tr><td>手腕动作可见长度</td><td>约 6 秒</td><td>约 10 秒</td><td>约 9 秒</td></tr>
+              <tr><td>画纸灰度可辨级数</td><td>约 5 级</td><td>约 6 级</td><td>约 8 级</td></tr>
+              <tr><td>整体色温倾向</td><td>偏暖</td><td>偏暖略提亮</td><td>偏冷</td></tr>
+            </tbody>
+          </table>
+
+          <h3>二、画作道具的两种说法：2B 还是 HB</h3>
+          <p>铅笔型号在公开资料里至少有两种写法。一派依据画面中铅笔的芯色浓淡，推断为 2B，理由是排线压暗时不需要反复叠加；另一派引述幕后美术记录，写作 HB，因为画面里高光区留白干净，靠的是纸面而非橡皮擦除。两种说法的证据强度不同：前者来自画面推断，属于推测；后者来自文字记录，属于转述，但记录本身尚未经过交叉核对。目前更稳妥的表述是“型号尚未定论，2B 与 HB 各有依据”。</p>
+
+          <h3>三、台词与画面的错位：一句对白提前两秒的后果</h3>
+          <p>2012 年 3D 重映版把露丝关于“光线要照着我的脸”的一句说明提前了约两秒。院线版里这句对白落在铅笔已经起稿之后，语义是补充要求；重映版里它落在落笔之前，语义变成先设定条件再动笔。同一句台词，两种因果顺序。字幕翻译在这个位置也分歧过：有的版本译作“让光打在我脸上”，有的译作“光要落到脸上”，前者偏指令，后者偏描述。</p>
+
+          <h3>四、可核对清单：自己动手比一遍</h3>
+          <ul class="checklist">
+            <li>找齐三个版本，至少保留原生配音与完整片长。</li>
+            <li>定位到第 62 分钟附近，以铅笔第一次触纸为锚点计时。</li>
+            <li>记录手腕动作持续秒数，误差控制在 1 秒内。</li>
+            <li>截取同一帧的画纸特写，比较灰度层次与纸面纤维。</li>
+            <li>核对台词出现的先后位置，判断是补充说明还是前置条件。</li>
+            <li>记录整体色温观感，标注暖、中性或冷。</li>
+          </ul>
+
+          <h3>五、争议边界的说明</h3>
+          <p>“未删减”这个说法本身容易误导。三版都未删除素描段落的主体，差异属于镜头调度与修复参数，而非整段存废。若把修复版色温变化理解为“改动剧情”，是把技术处理误读成叙事修改。反过来，若坚持院线版就是唯一正确版本，也无视了胶片老化导致的色彩漂移。事实层面的可核对项是时间码与帧数；判断层面的分歧点是冷暖倾向是否损害原作意图。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 步骤 -->
+      <section class="block" id="guide" aria-labelledby="guideTitle">
+        <div class="block-head">
+          <h2 id="guideTitle">体验指南：按四步对照着看</h2>
+          <span class="sub">GUIDE</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="num" aria-hidden="true"></div>
+            <div>
+              <h3>先定版本，再定设备</h3>
+              <p>4K 修复版对屏幕亮度和色域要求较高，普通笔记本屏幕容易把暗部压成一片黑；院线版在低亮度设备上反而观感更稳。先想清楚要看细节还是要氛围。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num" aria-hidden="true"></div>
+            <div>
+              <h3>把时间码记在手边</h3>
+              <p>素描段落集中在第 62 至 63 分钟，起稿、运笔、完成三个节点相隔不到 90 秒。手动记时比凭记忆可靠，误差可控制在 1 秒内。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num" aria-hidden="true"></div>
+            <div>
+              <h3>用暂停截帧代替连续播放</h3>
+              <p>画纸灰度与纸面纤维在连续播放中很难分辨，暂停截帧后再比对，8 级与 5 级的差距会直观很多。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num" aria-hidden="true"></div>
+            <div>
+              <h3>台词顺序单独记一行</h3>
+              <p>把关于光线的对白写在纸上，标出它落在落笔之前还是之后。这一行记录往往比画面截图更能解释版本差异。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 对照面板 -->
+      <section class="block" id="compare" aria-labelledby="cmpTitle">
+        <div class="block-head">
+          <h2 id="cmpTitle">对照面板：院线版与修复版取舍</h2>
+          <span class="sub">COMPARE</span>
+        </div>
+        <div class="compare">
+          <div>
+            <h3>1997 院线版看点</h3>
+            <ul>
+              <li>暖调更接近当年放映机色温，皮肤与灯光融合自然</li>
+              <li>素描特写剪得紧凑，起稿到完成节奏更快</li>
+              <li>铅笔灰度层次较少，但整体观感统一</li>
+              <li>适合首次观看，不被技术细节分散注意力</li>
+            </ul>
+          </div>
+          <div>
+            <h3>2023 4K 修复版看点</h3>
+            <ul>
+              <li>纸面纤维与铅笔颗粒清晰可辨，适合逐帧研究</li>
+              <li>手腕运笔轨迹完整，动作衔接更连贯</li>
+              <li>签名收尾的笔尖回锋可见，原版几乎糊成短线</li>
+              <li>色温偏冷，部分观众认为削弱了房间的亲密感</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 时间线 -->
+      <section class="block" id="timeline" aria-labelledby="tlTitle">
+        <div class="block-head">
+          <h2 id="tlTitle">发行版本时间线</h2>
+          <span class="sub">TIMELINE</span>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="tl-date">1997 年 12 月</div>
+            <p>院线首映，素描场景以暖调特写为主，片长 194 分钟。</p>
+          </li>
+          <li>
+            <div class="tl-date">2012 年 4 月</div>
+            <p>3D 重映版上线，素描段落增加纵深调度，手腕动作延长约 4 秒。</p>
+          </li>
+          <li>
+            <div class="tl-date">2023 年 2 月</div>
+            <p>4K 修复版发行，暗部细节提升，色温整体偏冷，纸面灰阶增加约 3 级。</p>
+          </li>
+          <li>
+            <div class="tl-date">2026 年 10 月</div>
+            <p>三版片长对照表按 24fps 参考帧率重算，素描段落内部帧数差重新标注。</p>
+          </li>
+          <li>
+            <div class="tl-date">2026 年 11 月</div>
+            <p>分镜表补入 3D 重映版第 47 至 52 镜，新增动作区间完成标注。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="block" id="rank" aria-labelledby="rankTitle">
+        <div class="block-head">
+          <h2 id="rankTitle">版本推荐排序：不同目标不同答案</h2>
+          <span class="sub">RANKING</span>
+        </div>
+        <ol class="rank-list">
+          <li><span>看画作细节与铅笔落纸</span><span class="rsub">4K 修复版，灰阶可辨约 8 级</span></li>
+          <li><span>还原首映观感与暖调氛围</span><span class="rsub">1997 院线版，色温偏暖</span></li>
+          <li><span>看镜头纵深与动作连贯</span><span class="rsub">2012 3D 重映版，手腕动作约 10 秒</span></li>
+          <li><span>研究台词与画面错位</span><span class="rsub">院线版与重映版对照，差约 2 秒</span></li>
+          <li><span>看签名收尾笔锋</span><span class="rsub">4K 修复版第 63 分 05 秒</span></li>
+          <li><span>低亮度设备夜看</span><span class="rsub">院线版，暗部不易压死</span></li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block" id="faq" aria-labelledby="faqTitle">
+        <div class="block-head">
+          <h2 id="faqTitle">常见问答</h2>
+          <span class="sub">FAQ</span>
+        </div>
+        <details class="faq" open>
+          <summary>素描场景在哪个时间码开始？</summary>
+          <div class="ans"><p>三个版本的素描段落都落在第 62 分钟前后，起稿镜头约在第 62 分 10 秒，完成镜头约在第 63 分 05 秒。4K 修复版与原版差 1 秒左右，手动计时可忽略。</p></div>
+        </details>
+        <details class="faq">
+          <summary>三个版本都保留了这场戏吗？</summary>
+          <div class="ans"><p>都保留了。流传的“未删减”说法多指不同发行地审查版之间的差异，与这三套主流母版关系不大。素描段落本身在三版里都是完整叙事段落，差别在镜头长度与修复参数。</p></div>
+        </details>
+        <details class="faq">
+          <summary>铅笔型号到底是 2B 还是 HB？</summary>
+          <div class="ans"><p>目前没有定论。画面推断倾向 2B，幕后文字记录倾向 HB。两者证据类型不同，画面推断属推测，文字记录属转述，尚未交叉核对。稳妥表述是型号待考。</p></div>
+        </details>
+        <details class="faq">
+          <summary>4K 修复版的冷色温算改动剧情吗？</summary>
+          <div class="ans"><p>不算。色温变化属于修复与调色环节，不涉及叙事结构。争议点在于冷暖倾向是否损害原作氛围，这属于审美判断，可以各持立场。</p></div>
+        </details>
+        <details class="faq">
+          <summary>画纸上能看清签名吗？</summary>
+          <div class="ans"><p>4K 修复版第 63 分 05 秒附近能看到笔尖回锋的痕迹，签名的书写方向可辨。院线版与 3D 版这个位置基本糊成一道短线。</p></div>
+        </details>
+        <details class="faq">
+          <summary>台词提前两秒理解成什么？</summary>
+          <div class="ans"><p>院线版里关于光线的对白落在起稿之后，是补充要求；3D 重映版里它落在落笔之前，变成先设定条件。同一句话因此承担不同的因果关系。</p></div>
+        </details>
+        <details class="faq">
+          <summary>手机上能看清画纸灰度区别吗？</summary>
+          <div class="ans"><p>难度较大。手机屏幕尺寸与亮度限制会压缩暗部层次，8 级与 5 级的差异在 6 英寸屏上不明显。想比灰度，建议用外接显示器或平板。</p></div>
+        </details>
+      </section>
+
+      <!-- 观众评论 -->
+      <section class="block" id="comments" aria-labelledby="cmtTitle">
+        <div class="block-head">
+          <h2 id="cmtTitle">观众反馈：三种语气</h2>
+          <span class="sub">COMMENTS</span>
+        </div>
+        <div class="comments">
+          <div class="cmt">
+            <div class="who"><span class="ava">舟</span><span class="name">舟山小周</span><span class="date">11-06</span></div>
+            <p>4K 修复版里铅笔在纸面留下的颗粒看得很清楚，起稿那一下的力度变化能看出来，这点比原版强不少。</p>
+            <span class="ref">指向：4K 修复版起稿镜头</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="ava">L</span><span class="name">Lakeside_07</span><span class="date">11-05</span></div>
+            <p>说真的，修复版的冷色调让我有点出戏，房间原本的暖光感没了。画质是好了，氛围也变了。</p>
+            <span class="ref">指向：2023 4K 修复版调色</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="ava">阿</span><span class="name">阿岚</span><span class="date">11-04</span></div>
+            <p>台词顺序那个点我专门比了一遍，重映版确实把关于光线的说明提前了，先说要什么光，再动笔，逻辑更顺。</p>
+            <span class="ref">指向：3D 重映版台词时序</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="ava">木</span><span class="name">木木不姓木</span><span class="date">11-03</span></div>
+            <p>铅笔型号说 2B 的说 HB 的都有，翻了几篇美术记录也没定数。画面推断终究是推断，别太当真。</p>
+            <span class="ref">指向：铅笔型号考据</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="ava">T</span><span class="name">Tidewatch</span><span class="date">11-02</span></div>
+            <p>三版都看过了，个人还是站院线版。素描段落剪得短，节奏紧，修复版那多出来的几秒反而显得拖。</p>
+            <span class="ref">指向：1997 院线版剪点</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="ava">纸</span><span class="name">纸飞机1997</span><span class="date">11-01</span></div>
+            <p>签名那段确实，修复版能看到笔尖回锋，我之前在原版里一直以为那只是铅笔蹭出来的印子。</p>
+            <span class="ref">指向：4K 修复版签名收尾</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news" aria-labelledby="newsTitle">
+        <div class="block-head">
+          <h2 id="newsTitle">相关资讯</h2>
+          <span class="sub">NEWS</span>
+        </div>
+        <div class="news-grid">
+          <article class="news-main">
+            <img src="https://picsum.photos/seed/titanic-news-main/720/400" width="720" height="400" loading="lazy" alt="电影胶片盒与修复设备的工作台示意">
+            <div class="nm-body">
+              <h3>4K 修复版暗部提升的来源：母版扫描与调色流程</h3>
+              <p>修复团队对原始底片做了 4K 扫描，暗部细节提升主要来自扫描位深与调色阶数。画纸灰阶从约 5 级提升到约 8 级，代价是整体色温向冷端移动约 200K。这项变化对素描场景影响最直观，因为画面里大面积是暖光下的纸面。</p>
+            </div>
+          </article>
+          <div class="news-list">
+            <article class="news-item">
+              <div class="nd">11-07</div>
+              <h4>3D 重映版纵深调度补记</h4>
+              <p>第 47 至 52 镜增加侧向位移，手腕动作延长约 4 秒。</p>
+            </article>
+            <article class="news-item">
+              <div class="nd">11-05</div>
+              <h4>字幕翻译分歧记录</h4>
+              <p>同一句光线对白出现“指令”与“描述”两种译法。</p>
+            </article>
+            <article class="news-item">
+              <div class="nd">11-03</div>
+              <h4>铅笔型号两种说法并存</h4>
+              <p>画面推断指向 2B，幕后记录写作 HB，均未交叉核对。</p>
+            </article>
+            <article class="news-item">
+              <div class="nd">10-30</div>
+              <h4>院线版胶片老化色彩漂移</h4>
+              <p>不同拷贝间暖调程度不一，比较时需注明拷贝来源。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="block" id="related" aria-labelledby="relTitle">
+        <div class="block-head">
+          <h2 id="relTitle">相关推荐标签</h2>
+          <span class="sub">RELATED</span>
+        </div>
+        <div class="rec-tags">
+          <a href="/#deep">素描场景时间码对照</a>
+          <a href="/#compare">院线版与 4K 修复版差异</a>
+          <a href="/#pick">铅笔起稿镜头解析</a>
+          <a href="/#faq">画作签名细节辨认</a>
+          <a href="/#guide">画纸灰度分级方法</a>
+          <a href="/#timeline">3D 重映版发行时间线</a>
+          <a href="/#deep">台词时序与因果顺序</a>
+          <a href="/#rank">版本选择推荐排序</a>
+          <a href="/#comments">观众评论抽样</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏：DOM 在主内容之后 -->
+    <aside class="side" aria-label="辅助导航">
+      <div class="side-nav">
+        <h2>本页导航</h2>
+        <a href="/#overview">版本概览</a>
+        <a href="/#pick">素描场景精选</a>
+        <a href="/#updates">版本动态</a>
+        <a href="/#cats">镜头分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#compare">对照面板</a>
+        <a href="/#timeline">发行时间线</a>
+        <a href="/#rank">推荐排序</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">观众反馈</a>
+        <a href="/#news">相关资讯</a>
+      </div>
+      <div class="side-card">
+        <h3>站内查找</h3>
+        <div class="search-box">
+          <input type="search" id="siteSearch" placeholder="如：时间码、灰度、签名" aria-label="站内查找关键词">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <div class="search-fb" id="searchFb" role="status" aria-live="polite"></div>
+      </div>
+      <div class="side-card">
+        <h3>核对要点</h3>
+        <ul class="mini-list">
+          <li>起稿镜头：第 62 分 10 秒前后</li>
+          <li>完成镜头：第 63 分 05 秒前后</li>
+          <li>三版片长：均为 194 分钟</li>
+          <li>画纸灰阶：5 级 / 6 级 / 8 级</li>
+          <li>台词时序差：约 2 秒</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>示例数据说明</h3>
+        <p>本页时间码、帧数与灰阶级数为示例对照数据，用于说明比对方法，具体以各发行版本母版为准。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="12" fill="#223f4e"/>
+          <path d="M8 44h48l-7 9H15z" fill="#c9a24b"/>
+          <path d="M19 40V17h22v23" fill="none" stroke="#e9e2d0" stroke-width="2.6"/>
+          <path d="M30 17v23M19 28h11M30 33h11" stroke="#e9e2d0" stroke-width="1.8"/>
+        </svg>
+        <span>泰坦尼克号画画未删减版</span>
+      </div>
+      <p>把同一场素描戏切成时间码、画纸灰阶与台词顺序三个可核对的坐标，方便逐项比对，也保留各版本审美判断的分歧。</p>
+    </div>
+    <div>
+      <h3>版本对照</h3>
+      <ul>
+        <li><a href="/#compare">院线版与修复版</a></li>
+        <li><a href="/#timeline">发行时间线</a></li>
+        <li><a href="/#rank">推荐排序</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>细节核查</h3>
+      <ul>
+        <li><a href="/#deep">时间码对照表</a></li>
+        <li><a href="/#guide">灰度比对方法</a></li>
+        <li><a href="/#faq">签名与铅笔型号</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>参与与反馈</h3>
+      <ul>
+        <li><a href="/#comments">观众评论抽样</a></li>
+        <li><a href="/#updates">本周核对清单</a></li>
+        <li><a href="/#related">相关推荐标签</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>页面更新时间 2026-11-08 · 对应正文“版本动态”核对清单</span>
+    <span>示例内容用于展示比对结构，版权归原影片权利方所有</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  var sticky = document.querySelector('.sticky-wrap');
+  var toTop = document.getElementById('toTop');
+  var links = nav ? nav.querySelectorAll('a') : [];
+  var sideLinks = document.querySelectorAll('.side-nav a');
+
+  function setStickyH(){
+    var h = sticky ? sticky.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty('--sticky-h', h + 'px');
+  }
+  setStickyH();
+  window.addEventListener('resize', setStickyH);
+  window.addEventListener('load', setStickyH);
+
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      });
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  // 滚动高亮
+  var sections = [];
+  sideLinks.forEach(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    var el = document.getElementById(id);
+    if(el) sections.push({a:a, el:el});
+  });
+
+  function highlight(){
+    var y = window.scrollY + (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sticky-h')) || 0) + 60;
+    var cur = null;
+    sections.forEach(function(s){
+      if(s.el.offsetTop <= y) cur = s;
+    });
+    sideLinks.forEach(function(a){ a.classList.remove('active'); });
+    if(cur) cur.a.classList.add('active');
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        highlight();
+        if(window.scrollY > 500){ toTop.classList.add('show'); }
+        else{ toTop.classList.remove('show'); }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, {passive:true});
+  highlight();
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 本地查找
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var fb = document.getElementById('searchFb');
+  var blocks = document.querySelectorAll('main section.block');
+  var all = Array.prototype.slice.call(blocks);
+
+  function normalize(s){ return (s||'').toLowerCase().replace(/\s+/g,''); }
+
+  function doSearch(){
+    var q = normalize(input.value);
+    if(!q){ fb.textContent='请输入关键词再查找。'; fb.className='search-fb'; return; }
+    var hits = all.filter(function(sec){
+      return normalize(sec.textContent).indexOf(q) > -1;
+    });
+    if(hits.length === 0){
+      fb.textContent='没有找到与“'+input.value+'”相关的板块，试试“时间码”“灰度”“签名”。';
+      fb.className='search-fb';
+      return;
+    }
+    fb.textContent='找到 '+hits.length+' 个相关板块，已跳到第一个。';
+    fb.className='search-fb ok';
+    hits[0].scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  btn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "泰坦尼克号画画未删减版",
+  "url": "https://example.com/",
+  "description": "泰坦尼克号画画未删减版的三套发行版本对照，含时间码、画纸灰阶、台词时序与铅笔型号考据。",
+  "inLanguage": "zh-CN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "素描场景在哪个时间码开始？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "三个版本的素描段落都落在第 62 分钟前后，起稿镜头约在第 62 分 10 秒，完成镜头约在第 63 分 05 秒，4K 修复版与原版差约 1 秒。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "三个版本都保留了这场戏吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "都保留了。素描段落本身在三版里都是完整叙事段落，差别在镜头长度与修复参数，“未删减”说法多指不同发行地审查版差异。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "铅笔型号到底是 2B 还是 HB？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目前没有定论。画面推断倾向 2B，幕后文字记录倾向 HB，两者证据类型不同，图像推断属推测，文字记录属转述，尚未交叉核对。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4K 修复版的冷色温算改动剧情吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不算。色温变化属于修复与调色环节，不涉及叙事结构，争议在于冷暖倾向是否损害原作氛围，属于审美判断。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "画纸上能看清签名吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "4K 修复版第 63 分 05 秒附近能看到笔尖回锋的痕迹，签名书写方向可辨，院线版与 3D 版这个位置基本糊成一道短线。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "台词提前两秒理解成什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "院线版里关于光线的对白落在起稿之后，是补充要求；3D 重映版里它落在落笔之前，变成先设定条件，同一句话承担不同因果关系。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+    </html>
